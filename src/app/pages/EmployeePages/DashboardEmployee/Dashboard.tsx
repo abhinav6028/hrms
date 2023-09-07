@@ -32,7 +32,7 @@ import {
 
 } from '../../../../_metronic/partials/widgets'
 
-const Dashboard :FC = () =>{
+const DashboardWrapper :FC = () =>{
    
 
     return <>
@@ -779,4 +779,4 @@ const Dashboard :FC = () =>{
    
 } 
 
-export {Dashboard}
+export {DashboardWrapper}

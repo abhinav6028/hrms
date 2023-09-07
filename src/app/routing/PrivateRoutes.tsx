@@ -2,7 +2,7 @@ import {lazy, FC, Suspense} from 'react'
 import {Route, Routes, Navigate} from 'react-router-dom'
 import {MasterLayout} from '../../_metronic/layout/MasterLayout'
 import TopBarProgress from 'react-topbar-progress-indicator'
-import {DashboardWrapper} from '../pages/dashboard/DashboardWrapper'
+// import {DashboardWrapper} from '../pages/dashboard/DashboardWrapper'
 import {getCSSVariableValue} from '../../_metronic/assets/ts/_utils'
 import {WithChildren} from '../../_metronic/helpers'
 import BuilderPageWrapper from '../pages/layout-builder/BuilderPageWrapper'
@@ -36,7 +36,7 @@ import {CompanyOverallPolicies} from "../pages/EmployerPages/HR/OverallPolicies"
 
 
 
-import {Dashboard} from "../pages/EmployeePages/DashboardEmployee/Dashboard"
+import {DashboardWrapper} from "../pages/EmployeePages/DashboardEmployee/Dashboard"
 import {DocumentsTracker} from "../pages/EmployeePages/DocumentsTracker/DocumentsTracker"
 import {MyAccounts} from "../pages/EmployeePages/myAccount/myAccount"
 import {Folder} from "../pages/EmployeePages/Folder/Folder"
@@ -99,7 +99,7 @@ const PrivateRoutes = () => {
         <Route path="/EmployeePages/myLeave/Requestleave" element={<Requestleaves />} />
         <Route path="/EmployeePages/myLeave/leaveTracker" element={<EmployeeLeaveTracker />} />
         <Route path="/EmployeePages/myLeave/leavePolicy" element={<LeavePolicy />} />
-        <Route path="/EmployeePages/Dashboard" element={<Dashboard />} />
+        <Route path="/EmployeePages/Dashboard" element={<DashboardWrapper />} />
         <Route path="/EmployeePages/DocumentsTracker" element={<DocumentsTracker />} />
         <Route path="/EmployeePages/myAccount" element={<MyAccounts />} />
         <Route path="/EmployeePages/Folder" element={<Folder />} />
@@ -107,7 +107,7 @@ const PrivateRoutes = () => {
         <Route path="/EmployeePages/KPI/EmployeeKPI" element={<EmployeeKPI />} />
 
         
-        <Route path='dashboard' element={<DashboardWrapper />} />
+        {/* <Route path='dashboard' element={<DashboardWrapper />} /> */}
         <Route path='builder' element={<BuilderPageWrapper />} />
         {/* Lazy Modules */}
         <Route
