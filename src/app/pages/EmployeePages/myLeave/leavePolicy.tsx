@@ -22,8 +22,7 @@ import {
 const LeavePolicy :FC = () =>{
     return <>
 
-<h1 className="text-primary mb-10"><i className="bi bi-shield-lock fs-2hx me-3 svg-icon-muted text-primary"></i>  {/* icon  */} Leave Policy</h1>
-
+<h3 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-1 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Leave Policy</h3>
 
 <div className='row g-6 g-xl-30 mb-10 mb-xl-4 justify-content-md-center'>
 

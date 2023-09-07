@@ -49,7 +49,7 @@ const MyAccount = Yup.object().shape({
 
 <div className='card mb-2 mb-xl-5'>
       <div
-        className='border-0 rounded-3 cursor-pointer p-3'
+        className='border-0 rounded-3 cursor-pointer p-2'
         role='button'
         data-bs-toggle='collapse'
         data-bs-target='#search_employee_info'
@@ -487,7 +487,7 @@ const MyAccount = Yup.object().shape({
 
     
     <div
-        className='border-0 rounded-3 cursor-pointer p-3 mb-5'
+        className='border-0 rounded-3 cursor-pointer p-2 mb-2 mb-xl-5'
         role='button'
         aria-expanded='true'
         data-bs-toggle="modal" 
@@ -500,7 +500,7 @@ const MyAccount = Yup.object().shape({
               >
                <i className="bi bi-person-lines-fill fs-2x px-5 svg-icon-muted text-warning"></i>  {/* icon  */}
                 <div className='card-title m-0'>
-                  <h3 className='fw-bolder m-0 text-white'>View My Job  Description / Responsibilities </h3>
+                  <h3 className='fw-bolder m-0 text-white'>View My Job Description </h3>
                 </div>
         </IconButton>
       </div>
@@ -550,7 +550,7 @@ const MyAccount = Yup.object().shape({
 
     <div className='card mb-2 mb-xl-5'>
       <div
-        className='border-0 rounded-3 cursor-pointer p-3'
+        className='border-0 rounded-3 cursor-pointer p-2'
         role='button'
         data-bs-toggle='collapse'
         data-bs-target='#search_family_info'

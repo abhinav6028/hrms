@@ -123,11 +123,14 @@ const LeaveTrackerPage: FC = () => {
     
     return(
         <> 
-            <div className='row g-5 g-xl-8 mb-md-5 mb-xl-5'>
-                <div className='col-md-10 col-xl-5 me-13'>
+        
+<h3 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-1 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Leave Tracker</h3>
+
+            <div className='row g-5 g-xl-8 mb-md-5 mb-xl-5 d-flex justify-content-evenly align-self-sm-stretch'>
+                <div className='col-md-5 col-xl-5 me-13'>
                     <div className='card h-md-auto mb-8'>
                         <div className='card-header'>
-                            <h1 className='p-3 mt-5 text-primary'><i className="bi bi-person-fill fs-2hx me-3 svg-icon-muted text-primary"></i> Saji Babu</h1>
+                            <h2 className='p-3 mt-5 text-primary'><i className="bi bi-person-fill fs-1 me-3 svg-icon-muted text-primary"></i> Saji Babu</h2>
                         </div>
                         <div className='card-body'>
                         <Autocomplete
@@ -155,17 +158,17 @@ const LeaveTrackerPage: FC = () => {
                             }
                         />
                         <div className='mt-6'>
-                        <span className="badge badge-primary fs-7 p-5 mb-5"><i className="bi bi-airplane-fill fs-2 svg-icon-muted text-white me-5"></i>Tickets Compensated: 1</span>
-                        <span className="badge badge-primary fs-7 p-5"><i className="bi bi-cash-coin fs-2 svg-icon-muted text-white me-5"></i> Amount Compensation: 150 OMR</span>
+                        <span className="badge badge-primary fs-7 p-2 mb-5 me-5"><i className="bi bi-airplane-fill fs-2 svg-icon-muted text-white me-5"></i>Tickets Compensated: 1</span>
+                        <span className="badge badge-primary fs-7 p-2"><i className="bi bi-cash-coin fs-2 svg-icon-muted text-white me-5"></i> Amount Compensation: 150 OMR</span>
                         </div>
 
                         </div>
                     </div>
                 </div>
                 
-                <div className='col-md-6 col-xl-2 mb-md-5' ref={col1}>
+                <div className='col-md-2 col-xl-2' ref={col1}>
                     <CardsWidget21
-                        className='h-md-30 w-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#34a8cb'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Sick Leave'
@@ -173,7 +176,7 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Sick")}
                     />
                     <CardsWidget21
-                        className='h-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#6255a3'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Marriage Leave'
@@ -181,7 +184,7 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Marriage")}
                     />
                     <CardsWidget21
-                        className='h-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#143983'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Maternity Leave'
@@ -190,9 +193,9 @@ const LeaveTrackerPage: FC = () => {
                     />
                 </div>
                
-                <div className='col-md-6 col-xl-2 mb-md-5' ref={col3}>
+                <div className='col-md-2 col-xl-2' ref={col3}>
                 <CardsWidget21
-                        className='h-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#6255a3'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Annual Leave'
@@ -200,7 +203,7 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Annual")}
                     />
                     <CardsWidget21
-                        className='h-sm-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#143983'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Emergency Leave'
@@ -216,9 +219,9 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Unpaid")}
                     />
                 </div>
-                <div className='col-md-6 col-xl-2 mb-md-5' ref={col4}>
+                <div className='col-md-2 col-xl-2' ref={col4}>
                     <CardsWidget21
-                        className='h-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#143983'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Hajj Leave'
@@ -226,7 +229,7 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Hajj")}
                     />
                     <CardsWidget21
-                        className='h-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#34a8cb'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Paternity Leave'
@@ -234,7 +237,7 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Hajj")}
                     />
                     <CardsWidget21
-                        className='h-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#6255a3'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Additional Leave'

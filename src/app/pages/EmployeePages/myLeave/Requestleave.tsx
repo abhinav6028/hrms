@@ -56,8 +56,8 @@ const Requestleaves: React.FC = () => {
 
 
 
+<h3 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-1 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Request New Leave </h3>
 
- 
     <div className='card mb-5 mb-xl-10'>
       <div
         className='card-header border-0 cursor-pointer bg-primary'
@@ -69,7 +69,7 @@ const Requestleaves: React.FC = () => {
        
       >
         <div className='card-title m-0'>
-          <h3 className='fw-bolder m-0 text-white'><i className="bi bi-file-earmark-diff fs-2hx px-5 svg-icon-muted text-white"></i>  {/* icon  */} Request New Leave</h3>
+          <h3 className='fw-bolder m-0 text-white'>Request Leave Form</h3>
         </div>
       </div>
 

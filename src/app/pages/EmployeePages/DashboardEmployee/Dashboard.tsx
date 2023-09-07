@@ -37,13 +37,14 @@ const DashboardWrapper :FC = () =>{
 
     return <>
 
-    
+<h3 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-1 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Dashboard</h3>
+
 <div className='row g-5 g-xl-10 d-flex align-items-stretch'>
       {/* begin::Col */} 
       <div className='col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-md-4 text-white'>
       <a className="text-white" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> 
         <CardsWidget21
-          className='h-md-30 mb-1 mb-xl-1 p-6 h-100'
+          className='h-md-30 mb-1 mb-xl-1 p-3 h-100'
           color='#6255a3'
           img={toAbsoluteUrl('/media/patterns/vector-1.png')}
           title='View All The Latest Announcements'
@@ -57,7 +58,7 @@ const DashboardWrapper :FC = () =>{
     <div className='col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-md-4 text-white'>
       <a className="text-white" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
         <CardsWidget21
-          className='h-md-30 mb-1 mb-xl-1 p-6 h-100'
+          className='h-md-30 mb-1 mb-xl-1 p-3 h-100'
           color='#143983'
           img={toAbsoluteUrl('/media/patterns/vector-1.png')}
           title='View All Your Expired Documents'
@@ -71,7 +72,7 @@ const DashboardWrapper :FC = () =>{
     <div className='col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-md-4 text-white'>
       <a className="text-white" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
         <CardsWidget21
-          className='h-md-30 mb-1 mb-xl-1 p-6 h-100' 
+          className='h-md-30 mb-1 mb-xl-1 p-3 h-100' 
           color='#34a8cb'
           img={toAbsoluteUrl('/media/patterns/vector-1.png')}
           title='View All Your Leaves Status'
