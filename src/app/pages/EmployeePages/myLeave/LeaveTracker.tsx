@@ -124,9 +124,9 @@ const LeaveTrackerPage: FC = () => {
     return(
         <> 
         
-<h3 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-1 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Leave Tracker</h3>
+<h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Leave Tracker</h5>
 
-            <div className='row g-5 g-xl-8 mb-md-5 mb-xl-5 d-flex justify-content-evenly align-self-sm-stretch'>
+            <div className='row g-5 g-xl-8 mb-md-5 mb-xl-5 d-flex justify-content-evenly'>
                 <div className='col-md-5 col-xl-5 me-13'>
                     <div className='card h-md-auto mb-8'>
                         <div className='card-header'>
@@ -166,7 +166,7 @@ const LeaveTrackerPage: FC = () => {
                     </div>
                 </div>
                 
-                <div className='col-md-2 col-xl-2' ref={col1}>
+                <div className='col-md-2 col-xl-2 flex-fill align-self-stretch' ref={col1}>
                     <CardsWidget21
                         className='h-md-20 mb-5'
                         color='#34a8cb'
@@ -193,7 +193,7 @@ const LeaveTrackerPage: FC = () => {
                     />
                 </div>
                
-                <div className='col-md-2 col-xl-2' ref={col3}>
+                <div className='col-md-2 col-xl-2 flex-fill align-self-stretch' ref={col3}>
                 <CardsWidget21
                         className='h-md-20 mb-5'
                         color='#6255a3'
@@ -219,7 +219,7 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Unpaid")}
                     />
                 </div>
-                <div className='col-md-2 col-xl-2' ref={col4}>
+                <div className='col-md-2 col-xl-2 flex-fill align-self-stretch' ref={col4}>
                     <CardsWidget21
                         className='h-md-20 mb-5'
                         color='#143983'

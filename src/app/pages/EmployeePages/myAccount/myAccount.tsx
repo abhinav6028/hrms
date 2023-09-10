@@ -47,6 +47,9 @@ const MyAccount = Yup.object().shape({
 
     return ( <>
 
+<h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */}  My Personal Details / Job Description / Family Members Details</h5>
+
+
 <div className='card mb-2 mb-xl-5'>
       <div
         className='border-0 rounded-3 cursor-pointer p-2'
@@ -61,9 +64,9 @@ const MyAccount = Yup.object().shape({
                 className='px-2'
                 onClick={() => {}}
               >
-                <i className="bi bi-person-fill fs-2x px-5 svg-icon-muted text-warning"></i>  {/* icon  */}
+                <i className="bi bi-person-fill fs-1 px-5 svg-icon-muted text-warning"></i>  {/* icon  */}
                 <div className='card-title m-0'>
-                  <h3 className='fw-bolder m-0 text-white'>View My Personal Details</h3>
+                  <h6 className='fw-bolder m-0 text-white'>View My Personal Details</h6>
                 </div>
         </IconButton>
 
@@ -498,9 +501,9 @@ const MyAccount = Yup.object().shape({
                 className='px-2'
                 onClick={() => {}}
               >
-               <i className="bi bi-person-lines-fill fs-2x px-5 svg-icon-muted text-warning"></i>  {/* icon  */}
+               <i className="bi bi-person-lines-fill fs-1 px-5 svg-icon-muted text-warning"></i>  {/* icon  */}
                 <div className='card-title m-0'>
-                  <h3 className='fw-bolder m-0 text-white'>View My Job Description </h3>
+                  <h6 className='fw-bolder m-0 text-white'>View My Job Description </h6>
                 </div>
         </IconButton>
       </div>
@@ -562,9 +565,9 @@ const MyAccount = Yup.object().shape({
                 className='px-2'
                 onClick={() => {}}
               >
-               <i className="bi bi-people-fill fs-2x px-5 svg-icon-muted text-warning"></i>  {/* icon  */}
+               <i className="bi bi-people-fill fs-1 px-5 svg-icon-muted text-warning"></i>  {/* icon  */}
                 <div className='card-title m-0'>
-                  <h3 className='fw-bolder m-0 text-white'>View Family Members Details</h3>
+                  <h6 className='fw-bolder m-0 text-white'>View Family Members Details</h6>
                 </div>
         </IconButton>
       </div>

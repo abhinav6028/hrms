@@ -128,8 +128,11 @@ const LeaveTrackerPage: FC = () => {
     
     return(
         <> 
-            <div className='row g-5 g-xl-8 mb-md-5 mb-xl-5'>
-            <div className='col-md-10 col-xl-5 me-13'>
+
+<h3 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-1 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Leave Tracker</h3>
+
+            <div className='row g-5 g-xl-8 mb-md-5 mb-xl-5 d-flex justify-content-evenly'>
+            <div className='col-md-5 col-xl-5 me-13'>
                     <div className='card h-md-auto mb-8'>
                         <div className='card-body'>
                         <h5 className='text-primary'><i className="bi bi-person-fill fs-2 me-3 svg-icon-muted text-primary"></i>Select Employee Name </h5>
@@ -192,9 +195,9 @@ const LeaveTrackerPage: FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-md-6 col-xl-2 mb-md-5' ref={col1}>
+                <div className='col-md-2 col-xl-2 flex-fill align-self-stretch' ref={col1}>
                     <CardsWidget21
-                        className='h-md-30 w-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#34a8cb'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Sick Leave'
@@ -202,7 +205,7 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Sick")}
                     />
                     <CardsWidget21
-                        className='h-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#6255a3'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Marriage Leave'
@@ -210,7 +213,7 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Marriage")}
                     />
                     <CardsWidget21
-                        className='h-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#143983'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Maternity Leave'
@@ -219,9 +222,9 @@ const LeaveTrackerPage: FC = () => {
                     />
                 </div>
                
-                <div className='col-md-6 col-xl-2 mb-md-5' ref={col3}>
+                <div className='col-md-2 col-xl-2 flex-fill align-self-stretch' ref={col3}>
                 <CardsWidget21
-                        className='h-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#6255a3'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Annual Leave'
@@ -229,7 +232,7 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Annual")}
                     />
                     <CardsWidget21
-                        className='h-sm-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#143983'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Emergency Leave'
@@ -237,7 +240,7 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Compassionate")}
                     />
                     <CardsWidget21
-                        className='h-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#34a8cb'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Unpaid Leave'
@@ -245,9 +248,9 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Unpaid")}
                     />
                 </div>
-                <div className='col-md-6 col-xl-2 mb-md-5' ref={col4}>
+                <div className='col-md-2 col-xl-2 flex-fill align-self-stretch' ref={col4}>
                     <CardsWidget21
-                        className='h-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#143983'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Hajj Leave'
@@ -255,7 +258,7 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Hajj")}
                     />
                     <CardsWidget21
-                        className='h-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#34a8cb'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Paternity Leave'
@@ -263,7 +266,7 @@ const LeaveTrackerPage: FC = () => {
                         onClick={() => setType("Hajj")}
                     />
                     <CardsWidget21
-                        className='h-md-30 mb-5'
+                        className='h-md-20 mb-5'
                         color='#6255a3'
                         img={toAbsoluteUrl('/media/patterns/vector-1.png')}
                         title='Additional Leave'
@@ -277,7 +280,7 @@ const LeaveTrackerPage: FC = () => {
                     <div className='accordion-item'>
                         <h2 className='accordion-header' id='kt_accordion_1_header_1'>
                             <button
-                            className='accordion-button fs-4 fw-bold collapsed'
+                            className='accordion-button fs-4 fw-bold collapsed text-primary'
                             type='button'
                             data-bs-toggle='collapse'
                             data-bs-target='#kt_accordion_1_body_1'
@@ -339,7 +342,7 @@ const LeaveTrackerPage: FC = () => {
                     <div className='accordion-item'>
                         <h2 className='accordion-header' id='kt_accordion_1_header_1'>
                             <button
-                            className='accordion-button fs-4 fw-bold collapsed'
+                            className='accordion-button fs-4 fw-bold collapsed text-primary'
                             type='button'
                             data-bs-toggle='collapse'
                             data-bs-target='#kt_accordion_1_body_2'

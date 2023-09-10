@@ -75,7 +75,7 @@ export function HeaderWrapper() {
           </div>
         )}
 
-        <h5 className='menu-content pt-8 pb-2 text-white text-center'> Welcome Saji Babu,</h5>
+        <h5 className='menu-content pt-6 pb-2 text-white text-center'> <span className="badge badge-light-primary mx-6 fs-8"><i className="bi bi-person-circle fs-3 me-3 text-primary"></i>Welcome Saji Babu</span></h5>
 
         <div
           id='kt_app_header_wrapper'

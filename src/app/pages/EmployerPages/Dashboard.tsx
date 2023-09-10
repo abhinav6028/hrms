@@ -7,6 +7,7 @@ import { Archive, Delete, Edit, DocumentScanner } from '@mui/icons-material';
 
 import {
   CardsWidget21,
+  CardsWidget30,
   MixedWidget16,
 } from '../../../_metronic/partials/widgets'
 
@@ -30,18 +31,180 @@ import {
 const DashboardPage: FC = () => (
   <>
 
+<h3 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-1 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employer Dashbord</h3>
 
 
 
-<div className='d-flex justify-content-center'>
-      <div className='col-xl-40'>
+<div className='d-flex justify-content-start'>
+    <div className='col-xl-40 me-5 flex-fill'>
       <TablesWidget8 className='card-xl-stretch mb-5 mb-xl-8' />
-      </div>
-      </div>
+    </div>
+
+    <div className='col-md-8 col-lg-2 mt-5'> 
+    <a className="col-md-4 col-lg-6 col-xl-4 col-xxl-3" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
+      <CardsWidget30
+        className='h-md-47 mb-5'
+        color='#143983'
+        img={toAbsoluteUrl('/media/patterns/vector-1.png')}
+        title='Active Employees'
+        description='32/40'
+        />
+    </a>
+    <a className="col-md-4 col-lg-6 col-xl-4 col-xxl-3" data-bs-toggle="collapse" href="#1_months_EX_table" role="button" aria-expanded="false" aria-controls="1_months_EX_table">
+      <CardsWidget30
+        className='h-md-47 mb-5'
+        color='#34a8cb'
+        img={toAbsoluteUrl('/media/patterns/vector-1.png')}
+        title='Expired Documents'
+        description='8'
+        />
+    </a>
+    <a className="col-md-4 col-lg-6 col-xl-4 col-xxl-3" data-bs-toggle="collapse" href="#pending_leave_request" role="button" aria-expanded="false" aria-controls="pending_leave_request">
+      <CardsWidget30
+        className='h-md-47'
+        color='#831414'
+        img={toAbsoluteUrl('/media/patterns/vector-1.png')}
+        title='Pending Leaves'
+        description='3'
+        />
+    </a>
+    </div>
+
+</div>
 
 
 
-      <div className="card borcard-borderedder  bg-primary-subtle mb-10">
+         
+ <div className="d-md-flex justify-content-md-center" >  
+       <div className="collapse w-100" id="collapseExample5">   
+     <table className="table table-striped table-rounded border border-gray-300 table-row-bordered table-row-gray-300 gy-5 gs-7 bg-white shadow">
+     <thead>
+         <tr className="fw-bold fs-6 text-gray-800 border-bottom border-gray-200" style={{backgroundColor: '#143983'}}>
+             <th style={{ color: 'white'}}><i className="bi bi-person-fill fs-3 me-2 svg-icon-muted text-white"></i>Active Employees</th>
+             
+         </tr>
+     </thead>
+     <tbody>
+         <tr>
+             <td className='text-primary fw-bold'>Zubair</td>
+         </tr>
+         <tr>
+             <td className='text-primary fw-bold'>Balqees</td>
+         </tr>
+         <tr>
+             <td className='text-primary fw-bold'>Arjun</td>
+         </tr>
+         <tr>
+             <td className='text-primary fw-bold'>Maya</td>
+         </tr>
+         <tr>
+             <td className='text-primary fw-bold'>Shyjel</td>
+         </tr>
+         <tr>
+             <td className='text-primary fw-bold'>Zainab</td>
+         </tr>
+         <tr>
+             <td className='text-primary fw-bold'>Hyder</td>
+         </tr>
+         <tr>
+             <td className='text-primary fw-bold'>Abdulaziz</td>
+         </tr>
+         <tr>
+             <td className='text-primary fw-bold'>Meera</td>
+         </tr>
+     </tbody>
+   </table>
+       </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+{/* documents expired in 1 month table */}
+<div className="collapse" id="1_months_EX_table">   
+  <table className="table table-rounded border border-gray-300 table-row-bordered table-row-gray-300  gy-5 gs-7 bg-white shadow">
+    <thead>
+        <tr className="fw-bold fs-5 border-bottom border-gray-200 bg-primary text-white">
+            <th><i className="bi bi-person-fill fs-3 me-2 svg-icon-muted text-white"></i>Name</th>
+            <th><i className="bi bi-file-earmark-fill fs-3 me-2 svg-icon-muted text-white"></i>Document Name</th>
+            <th><i className="bi bi-calendar2-day-fill fs-3 me-2 svg-icon-muted text-white"></i>Expiration Date</th>
+            <th><i className="bi bi-hourglass-top fs-3 me-2 svg-icon-muted text-white"></i>Expiration Status</th>
+            <th style={{width:"15px"}}>View</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td className="text-primary fw-bold">Ali</td>
+            <td className="text-primary fw-bold">Visa</td>
+            <td className="text-primary fw-bold"><span className="badge badge-primary p-2">10/1/2023</span></td>
+            <td className="text-primary fw-bold"><span className="badge badge-light-info p-2">Due in 30 Days</span></td>
+            <td>
+              <Box sx={{ justifyContent: 'center' }}>     
+                        <IconButton
+                            onClick={() => {   
+                            }}
+                        >
+                           <DocumentScanner className='text-primary'/>
+                        </IconButton> 
+              </Box>
+          </td>
+        </tr>
+        <tr>
+        <td className="text-primary fw-bold">Sara</td>
+            <td className="text-primary fw-bold">Passport</td>
+            <td className="text-primary fw-bold"><span className="badge badge-primary p-2">10/6/2023</span></td>
+            <td className="text-primary fw-bold"><span className="badge badge-light-info p-2">Due in 31 Days</span></td>
+            <td className="">
+              <Box sx={{ justifyContent: 'center' }}>
+                        <IconButton
+                            onClick={() => {
+                                
+                            }}
+                        >
+                           <DocumentScanner className='text-primary'/>
+                        </IconButton> 
+              </Box>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+
+
+      
+    
+{/* pending table */}
+<div className="collapse" id="pending_leave_request">   
+  <table className="table table-rounded border border-gray-300 table-row-bordered table-row-gray-300  gy-5 gs-7 bg-white shadow">
+    <thead>
+        <tr className="fw-bold fs-5 border-bottom border-gray-200 bg-primary text-white">
+            <th><i className="bi bi-person-fill fs-3 me-2 svg-icon-muted text-white"></i>Name</th>
+            <th><i className="bi bi-file-earmark-fill fs-3 me-2 svg-icon-muted text-white"></i>Leave Type</th>
+            <th><i className="bi bi-hourglass-top fs-3 me-2 svg-icon-muted text-white"></i>Duration</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td className="text-primary fw-bold">Ali</td>
+            <td className="text-primary fw-bold">Annual</td>
+            <td className="text-primary fw-bold"><span className="badge badge-light-danger p-2">5 Days</span></td>
+        </tr>
+        <tr>
+        <td className="text-primary fw-bold">Sara</td>
+            <td className="text-primary fw-bold">Annual</td>
+            <td className="text-primary fw-bold"><span className="badge badge-light-danger p-2">5 Days</span></td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+
+<div className="card borcard-borderedder mb-10" style={{background: "#f5f5dc"}}>
   <div className="card-header ribbon ribbon-top ribbon-vertical">
     <div className="ribbon-label" style={{background: "#143983"}}>
       <i className="bi bi-megaphone-fill fs-1 text-white"></i>
@@ -201,186 +364,6 @@ const DashboardPage: FC = () => (
   </div>
 
 
-<div className='justify-content-md-center'>
-
-<div className='row g-2 g-xl-4 justify-content-md-center pb-5'>     {/* justify-content-md-center */}
-       
-       {/* begin::Col */}
-       <a className="col-md-4 col-lg-4 col-xl-4 col-xxl-3" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">
-          <MixedWidget16
-              className='h-md-60 mb-5 mb-xl-10 bg-primary-subtle'
-              chartProgressColor='#143983'
-              chartTrackColor='#BFCAE2'
-              chartHeight='250px'
-              chartTitle='Employees'
-              chartCompleted='32'
-              chartTotal='40'
-            />
-       </a>
-       
-       <a className="col-md-4 col-lg-4 col-xl-4 col-xxl-3" data-bs-toggle="collapse" href="#1_months_EX_table" role="button" aria-expanded="false" aria-controls="1_months_EX_table">
-            <MixedWidget16
-              className='h-md-60 mb-5 mb-xl-10 bg-primary-subtle'
-              chartProgressColor='#6255a3'
-              chartTrackColor='#baafed'
-              chartHeight='250px'
-              chartTitle='EX Documents'
-              chartCompleted='15'
-              // chartTotal='13'
-            />
-       </a>
-
-       <a className="col-md-4 col-lg-4 col-xl-4 col-xxl-3" data-bs-toggle="collapse" href="#pending_leave_request" role="button" aria-expanded="false" aria-controls="pending_leave_request">
-            <MixedWidget16
-              className='h-md-60 mb-5 mb-xl-10 bg-primary-subtle'
-              chartProgressColor='#FF1931'
-              chartTrackColor='#FEA2A2'
-              chartHeight='250px'
-              chartTitle='Pending Leaves'
-              chartCompleted='12'
-              // chartTotal='13'
-            />
-       </a>
-        
-
- </div>
-         
-
-
-
-
-
-         
- <div className="d-md-flex justify-content-md-center" >  
-       <div className="collapse w-50" id="collapseExample5">   
-     <table className="table table-striped table-rounded border border-gray-300 table-row-bordered table-row-gray-300 gy-5 gs-7 bg-white shadow">
-     <thead>
-         <tr className="fw-bold fs-6 text-gray-800 border-bottom border-gray-200" style={{backgroundColor: '#143983'}}>
-             <th style={{ color: 'white'}}><i className="bi bi-person-fill fs-3 me-2 svg-icon-muted text-white"></i>Active Employees</th>
-             
-         </tr>
-     </thead>
-     <tbody>
-         <tr>
-             <td className='text-primary fw-bold'>Zubair</td>
-         </tr>
-         <tr>
-             <td className='text-primary fw-bold'>Balqees</td>
-         </tr>
-         <tr>
-             <td className='text-primary fw-bold'>Arjun</td>
-         </tr>
-         <tr>
-             <td className='text-primary fw-bold'>Maya</td>
-         </tr>
-         <tr>
-             <td className='text-primary fw-bold'>Shyjel</td>
-         </tr>
-         <tr>
-             <td className='text-primary fw-bold'>Zainab</td>
-         </tr>
-         <tr>
-             <td className='text-primary fw-bold'>Hyder</td>
-         </tr>
-         <tr>
-             <td className='text-primary fw-bold'>Abdulaziz</td>
-         </tr>
-         <tr>
-             <td className='text-primary fw-bold'>Meera</td>
-         </tr>
-     </tbody>
-   </table>
-       </div>
-    </div>
-
-</div>
-
-
-
-
-
-
-    
-{/* documents expired in 1 month table */}
-<div className="collapse" id="1_months_EX_table">   
-  <table className="table table-rounded border border-gray-300 table-row-bordered table-row-gray-300  gy-5 gs-7 bg-white shadow">
-    <thead>
-        <tr className="fw-bold fs-5 border-bottom border-gray-200 bg-primary text-white">
-            <th><i className="bi bi-person-fill fs-3 me-2 svg-icon-muted text-white"></i>Name</th>
-            <th><i className="bi bi-file-earmark-fill fs-3 me-2 svg-icon-muted text-white"></i>Document Name</th>
-            <th><i className="bi bi-calendar2-day-fill fs-3 me-2 svg-icon-muted text-white"></i>Expiration Date</th>
-            <th><i className="bi bi-hourglass-top fs-3 me-2 svg-icon-muted text-white"></i>Expiration Status</th>
-            <th style={{width:"15px"}}>View</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-        <td className="text-primary fw-bold">Ali</td>
-            <td className="text-primary fw-bold">Visa</td>
-            <td className="text-primary fw-bold"><span className="badge badge-primary p-2">10/1/2023</span></td>
-            <td className="text-primary fw-bold"><span className="badge badge-light-info p-2">Due in 30 Days</span></td>
-            <td>
-              <Box sx={{ justifyContent: 'center' }}>     
-                        <IconButton
-                            onClick={() => {   
-                            }}
-                        >
-                           <DocumentScanner className='text-primary'/>
-                        </IconButton> 
-              </Box>
-          </td>
-        </tr>
-        <tr>
-        <td className="text-primary fw-bold">Sara</td>
-            <td className="text-primary fw-bold">Passport</td>
-            <td className="text-primary fw-bold"><span className="badge badge-primary p-2">10/6/2023</span></td>
-            <td className="text-primary fw-bold"><span className="badge badge-light-info p-2">Due in 31 Days</span></td>
-            <td className="">
-              <Box sx={{ justifyContent: 'center' }}>
-                        <IconButton
-                            onClick={() => {
-                                
-                            }}
-                        >
-                           <DocumentScanner className='text-primary'/>
-                        </IconButton> 
-              </Box>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-</div>
-
-
-      
-    
-{/* pending table */}
-<div className="collapse" id="pending_leave_request">   
-  <table className="table table-rounded border border-gray-300 table-row-bordered table-row-gray-300  gy-5 gs-7 bg-white shadow">
-    <thead>
-        <tr className="fw-bold fs-5 border-bottom border-gray-200 bg-primary text-white">
-            <th><i className="bi bi-person-fill fs-3 me-2 svg-icon-muted text-white"></i>Name</th>
-            <th><i className="bi bi-file-earmark-fill fs-3 me-2 svg-icon-muted text-white"></i>Leave Type</th>
-            <th><i className="bi bi-hourglass-top fs-3 me-2 svg-icon-muted text-white"></i>Duration</th>
-           
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-        <td className="text-primary fw-bold">Ali</td>
-            <td className="text-primary fw-bold">Annual</td>
-            <td className="text-primary fw-bold"><span className="badge badge-light-danger p-2">5 Days</span></td>
-        </tr>
-        <tr>
-        <td className="text-primary fw-bold">Sara</td>
-            <td className="text-primary fw-bold">Annual</td>
-            <td className="text-primary fw-bold"><span className="badge badge-light-danger p-2">5 Days</span></td>
-        </tr>
-    </tbody>
-  </table>
-</div>
-
-  
 
   </>
 )

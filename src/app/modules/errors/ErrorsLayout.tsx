@@ -23,8 +23,8 @@ const ErrorsLayout = () => {
     <div className='d-flex flex-column flex-root'>
       <div className='d-flex flex-column flex-center flex-column-fluid'>
         <div className='d-flex flex-column flex-center text-center p-5'>
-          <div className='card card-flush  w-lg-400px py-5 bg-primary-subtle'>
-            <div className='card-body py-lg-7'>
+          <div className='card card-flush  w-lg-300px py-5 bg-primary-subtle'>
+            <div className='card-body py-lg-5'>
               <Outlet />
             </div>
           </div>

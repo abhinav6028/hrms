@@ -56,7 +56,7 @@ const Requestleaves: React.FC = () => {
 
 
 
-<h3 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-1 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Request New Leave </h3>
+<h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Request New Leave </h5>
 
     <div className='card mb-5 mb-xl-10'>
       <div

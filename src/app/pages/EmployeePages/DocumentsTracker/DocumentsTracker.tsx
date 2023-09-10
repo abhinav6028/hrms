@@ -34,7 +34,8 @@ const RenewalStatusPage: FC = () => {
     
     return(
       <>
-      <h1 className="text-primary mb-10"><i className="bi bi-journal-text fs-2hx me-3 svg-icon-muted text-primary"></i>  {/* icon  */} My Documents / Family Members Documents</h1>
+  
+      <h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} My Documents / Family Members Documents</h5>
 
           <div className='row g-5 g-xl-10 mb-md-4 mb-xl-10 d-flex flex-wrap align-content-stretch'>
             <div className="col-md-12 col-l-6 col-xl-4">
