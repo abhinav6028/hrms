@@ -58,6 +58,10 @@ const EmployeeInfo: FC = () => {
   }, [stepperRef])
 
   return (
+<>
+    <h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} View / Edit Employee Details</h5>
+
+
     <div className='card'>
       <div className='card-body'>
         <div
@@ -67,29 +71,29 @@ const EmployeeInfo: FC = () => {
         >
           <div className='stepper-nav mb-5'>
             <div className='stepper-item current' data-kt-stepper-element='nav'>
-              <h3 className='stepper-title'>Account Type</h3>
+              <h6 className='stepper-title fs-6'>Personal Details</h6>
             </div>
 
             <div className='stepper-item' data-kt-stepper-element='nav'>
-              <h3 className='stepper-title'>Account Info</h3>
+              <h6 className='stepper-title fs-6'>Corporate Details</h6>
             </div>
 
             <div className='stepper-item' data-kt-stepper-element='nav'>
-              <h3 className='stepper-title'>Business Info</h3>
+              <h6 className='stepper-title fs-6'>Job Description & Company Benefits</h6>
             </div>
 
             <div className='stepper-item' data-kt-stepper-element='nav'>
-              <h3 className='stepper-title'>Billing Details</h3>
+              <h6 className='stepper-title fs-6'>Family Members Details</h6>
             </div>
 
             <div className='stepper-item' data-kt-stepper-element='nav'>
-              <h3 className='stepper-title'>Completed</h3>
+              <h6 className='stepper-title fs-6'>Account Details</h6>
             </div>
           </div>
 
           <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
             {() => (
-              <Form className='mx-auto mw-600px w-100 pt-15 pb-10' id='kt_create_account_form'>
+              <Form className='mx-auto mw-700px w-100 pt-15 pb-10' id='kt_create_account_form'>
                 <div className='current' data-kt-stepper-element='content'>
                   <Step1 />
                 </div>
@@ -139,6 +143,7 @@ const EmployeeInfo: FC = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

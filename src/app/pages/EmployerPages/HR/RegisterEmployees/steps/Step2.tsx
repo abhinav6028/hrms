@@ -69,7 +69,7 @@ const Step2: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Insurance Policy Number</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Car Insurance Policy no.</label>
               <div className='col-lg-3 fv-row'>
                 <input
                       type='number'
@@ -252,7 +252,7 @@ const Step2: FC = () => {
             </div>
 
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Status  </label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Work Status  </label>
               <div className='col-lg-3 fv-row'>
               <select className="form-select form-select-solid fs-7 bg-body-secondary" aria-label="Select example">
               <option value="On Leave">On Leave</option>
