@@ -160,28 +160,6 @@ const SidebarMenuMain = () => {
           fontIcon='bi-app-indicator'
         />
 
-        <SidebarMenuItemWithSub
-        to=''
-        title='Employees'
-        icon='user-edit'
-        fontIcon='bi-app-indicator'
-      >
-            <SidebarMenuItem
-              to='employer/hr/Register'
-              icon=''
-              title='Register New Employee'
-              fontIcon='bi-app-indicator'
-              hasBullet={true} 
-            />
-            <SidebarMenuItem
-              to='employer/hr/addAccount'
-              icon=''
-              title='Employee Details'
-              fontIcon='bi-app-indicator'
-              hasBullet={true} 
-            />
-        </SidebarMenuItemWithSub>
-
         <SidebarMenuItem
           to='employer/hr/letters'
           icon='file-sheet'
@@ -195,6 +173,35 @@ const SidebarMenuMain = () => {
           fontIcon='bi-app-indicator'
         />
       </SidebarMenuItemWithSub>
+
+      <SidebarMenuItemWithSub
+        to=''
+        title='Account Details'
+        icon='user-edit'
+        fontIcon='bi-app-indicator'
+      >
+            <SidebarMenuItem
+              to='employer/hr/RegisterEmployees/Register'
+              icon=''
+              title='Register New Employee'
+              fontIcon='bi-app-indicator'
+              hasBullet={true} 
+            />
+            <SidebarMenuItem
+              to='employer/hr/EmployeeInfo/EmployeeInfo'
+              icon=''
+              title='Employee Details'
+              fontIcon='bi-app-indicator'
+              hasBullet={true} 
+            />
+            <SidebarMenuItem
+              to='employer/hr/addAccount'
+              icon=''
+              title='Employee Details OLD'
+              fontIcon='bi-app-indicator'
+              hasBullet={true} 
+            />
+        </SidebarMenuItemWithSub>
 
       <SidebarMenuItemWithSub
           to=''

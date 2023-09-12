@@ -28,7 +28,8 @@ import {CompanyDocs} from '../pages/EmployerPages/Organisation/CompanyDocs'
 import {BankGuarantee} from '../pages/EmployerPages/Organisation/BankGaurentee'
 import {ProductsServices} from '../pages/EmployerPages/Organisation/ProductsServices'
 import {AddAccount, AddAccounts} from "../pages/EmployerPages/HR/AddAccount"
-import {Register} from "../pages/EmployerPages/HR/Register"
+import {Register} from "../pages/EmployerPages/HR/RegisterEmployees/Register"
+import {EmployeeInfo} from "../pages/EmployerPages/HR/EmployeeInfo/EmployeeInfo"
 import {Policy} from "../pages/EmployerPages/Leave/Policies"
 import {KPIQuestions} from "../pages/EmployerPages/EmployerKPI/KPIQuestions"
 import {ReportKPI} from "../pages/EmployerPages/EmployerKPI/ReportKPI"
@@ -79,7 +80,8 @@ const PrivateRoutes = () => {
         <Route path="employer/hr/folder" element={<EmployeeDoc />} />
         
         <Route path="employer/hr/addAccount" element={<AddAccounts />} />
-        <Route path="employer/hr/Register" element={<Register />} />
+        <Route path="employer/hr/RegisterEmployees/Register" element={<Register />} />
+        <Route path="employer/hr/EmployeeInfo/EmployeeInfo" element={<EmployeeInfo />} />
         <Route path="employer/hr/letters" element={<HRLetters />} />
         <Route path="employer/hr/policies" element={<Policy />} />
         <Route path="employer/hr/OverallPolicies" element={<CompanyOverallPolicies />} />

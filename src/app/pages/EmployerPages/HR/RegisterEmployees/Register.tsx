@@ -1,11 +1,11 @@
 import {useEffect, useRef, useState} from 'react'
-import {KTIcon} from '../../../../_metronic/helpers'
+import {KTIcon} from '../../../../../_metronic/helpers'
 import {Step1} from './steps/Step1'
 import {Step2} from './steps/Step2'
 import {Step3} from './steps/Step3'
 import {Step4} from './steps/Step4'
 import {Step5} from './steps/Step5'
-import {StepperComponent} from '../../../../_metronic/assets/ts/components'
+import {StepperComponent} from '../../../../../_metronic/assets/ts/components'
 import {Form, Formik, FormikValues} from 'formik'
 import {createAccountSchemas, ICreateAccount, inits} from './CreateAccountWizardHelper'
 
@@ -65,7 +65,7 @@ const Register = () => {
       {/* begin::Aside*/}
       <div className='card d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-300px w-xxl-400px me-9'>
         {/* begin::Wrapper*/}
-        <div className='card-body px-6 px-lg-10 px-xxl-15 py-20'>
+        <div className='card-body px-6 px-lg-10 px-xxl-10 py-20'>
           {/* begin::Nav*/}
           <div className='stepper-nav'>
             {/* begin::Step 1*/}
@@ -81,9 +81,9 @@ const Register = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h6 className='stepper-title fs-6'>Register</h6>
+                  <h6 className='stepper-title fs-6'>Personal Details</h6>
 
-                  <div className='stepper-desc fw-semibold fs-7'>Enter Employee Details</div>
+                  <div className='stepper-desc fw-semibold fs-7'>Enter Employee Personal Details</div>
                 </div>
                 {/* end::Label*/}
               </div>
@@ -108,8 +108,8 @@ const Register = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h6 className='stepper-title fs-6'>Set Job Description</h6>
-                  <div className='stepper-desc fw-semibold fs-7'>Enter Employee Responsibilities</div>
+                  <h6 className='stepper-title fs-6'>Corporate Details</h6>
+                  <div className='stepper-desc fw-semibold fs-7'>Enter Employee Corporate Details</div>
                 </div>
                 {/* end::Label*/}
               </div>
@@ -134,8 +134,8 @@ const Register = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h6 className='stepper-title fs-6'>Business Info</h6>
-                  <div className='stepper-desc fw-semibold fs-7'>Your Business Related Info</div>
+                  <h6 className='stepper-title fs-6'>Set Job Description</h6>
+                  <div className='stepper-desc fw-semibold fs-7'>Enter Employee Responsibilities & Benefits</div>
                 </div>
                 {/* end::Label*/}
               </div>
@@ -160,8 +160,8 @@ const Register = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h6 className='stepper-title fs-6'>Billing Details</h6>
-                  <div className='stepper-desc fw-semibold fs-7'>Set Your Payment Methods</div>
+                  <h6 className='stepper-title fs-6'>Add Family Members</h6>
+                  <div className='stepper-desc fw-semibold fs-7'>Enter Employee Family Members Details</div>
                 </div>
                 {/* end::Label*/}
               </div>
@@ -186,8 +186,8 @@ const Register = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h6 className='stepper-title fs-6'>Completed</h6>
-                  <div className='stepper-desc fw-semibold fs-7'>Woah, we are here</div>
+                  <h6 className='stepper-title fs-6'>Set Username & Password</h6>
+                  <div className='stepper-desc fw-semibold fs-7'>Create System Username & Password</div>
                 </div>
                 {/* end::Label*/}
               </div>
@@ -201,10 +201,10 @@ const Register = () => {
       </div>
       {/* begin::Aside*/}
 
-      <div className='d-flex flex-row-fluid flex-center bg-body rounded'>
+      <div className='card d-flex flex-row-fluid flex-center bg-white rounded'>
         <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
           {() => (
-            <Form className='py-20 w-100 w-xl-700px px-9' noValidate id='kt_create_account_form'>
+            <Form className='py-5 w-100 w-xl-700px' noValidate id='kt_create_account_form'>
               <div className='current' data-kt-stepper-element='content'>
                 <Step1 />
               </div>
