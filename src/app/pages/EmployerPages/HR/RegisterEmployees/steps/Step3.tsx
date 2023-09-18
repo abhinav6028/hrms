@@ -7,7 +7,7 @@ const Step3: FC = () => {
       
 
       <div className='pb-10 pb-lg-15'>
-        <h4 className='fw-bolder text-danger'>Set Job Description & Company Benefits</h4>
+        <h4 className='fw-bolder text-danger'>Set Employee Job Description & Company Benefits</h4>
         <div className='text-gray-400 fw-bold fs-7'>
           You need to enter the employee job description and select the company benefits.
         </div>

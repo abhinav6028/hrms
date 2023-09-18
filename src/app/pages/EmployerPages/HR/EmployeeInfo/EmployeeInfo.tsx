@@ -131,7 +131,7 @@ const EmployeeInfo: FC = () => {
                     <button type='submit' className='btn btn-lg btn-primary me-3'>
                       <span className='indicator-label'>
                         {!isSubmitButton && 'Continue'}
-                        {isSubmitButton && 'Submit'}
+                        {isSubmitButton && 'Save All'}
                         <KTIcon iconName='arrow-right' className='fs-3 ms-2 me-0' />
                       </span>
                     </button>

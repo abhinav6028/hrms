@@ -434,7 +434,7 @@ const Step1: FC = () => {
             </div>
 
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Marital Status</label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Material Status</label>
               <div className='col-lg-3 fv-row'>
               <select className="form-select form-select-solid border fs-7 bg-body-secondary" aria-label="Select example"
               value={MaritalStatus}
@@ -473,7 +473,7 @@ const Step1: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Work Experience (Years) </label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Years of Experience </label>
 
               <div className='col-lg-3 fv-row'>
               <input
@@ -542,7 +542,7 @@ const Step1: FC = () => {
             </div>
 
             <div className='row mb-1'>
-            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Contact Number</label>
+            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Contact Number +968</label>
               <div className='col-lg-3 fv-row'>
               <input
                       type='number'

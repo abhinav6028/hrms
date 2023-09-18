@@ -3,6 +3,7 @@ import {KTIcon} from '../../../../../../_metronic/helpers'
 import {Link} from 'react-router-dom'
 
 const Step5: FC = () => {
+  
   return (
     <div className='w-100'>
 
@@ -15,39 +16,35 @@ const Step5: FC = () => {
       </div> */}
 
       <div className='mb-0'>
-        <div className='notice d-flex bg-light-warning rounded border-warning border border-dashed p-4'>
-          <KTIcon iconName='information-5' className='fs-1 text-warning me-4' />
+        <div className='notice d-flex bg-light-danger rounded border-danger border border-dashed p-5'>
+          <KTIcon iconName='information-5' className='fs-1 text-danger me-4' />
           <div className='d-flex flex-stack flex-grow-1'>
             <div className='fw-bold'>
-              <h4 className='text-gray-800 fw-bolder fs-6'>Note!</h4>
+              <h4 className='text-danger fw-bolder fs-6'>You Are Deactivating This Account</h4>
               <div className='fs-8 text-gray-600'>
-                An email and a SMS message will be sent to the employee which contains his username and password.
+               Username (Saji1234), Employee Full Name (Saji Babu), Employee ID (023).
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className='row mb-5 mt-10'>
-            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'><i className="bi bi-person-fill fs-3 me-2"></i>Username</label>
-              <div className='col-lg-3 fv-row'>
+          {/* <div className='form-check form-check-solid fv-row mt-10'>
               <input
-                      type='text'
-                      className='form-control form-control-lg form-control-solid fs-7 bg-body-secondary'
-                      placeholder=''
-                    />
-              </div>
+                className='form-check-input'
+                type='checkbox'
+              />
+              <label className='form-check-label fw-bold ps-2 fs-6' htmlFor='deactivate'>
+                I confirm that I want to deactivate this account
+              </label>
+            </div> */}
 
-              <label className='col-lg-1'></label>
 
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'><i className="bi bi-lock-fill fs-3 me-2"></i>Password</label>
-              <div className='col-lg-3 fv-row'>
-              <input
-                      type='text'
-                      className='form-control form-control-lg form-control-solid fs-7 bg-body-secondary'
-                      placeholder=''
-                    />
-              </div>
+            <div className="form-check form-switch form-check-custom form-check-solid me-10 mt-10">
+              <input className="form-check-input h-30px w-50px" type="checkbox" value="" id="flexSwitch40x60"/>
+              <label className="form-check-label fw-bold text-primary" htmlFor="flexSwitch40x60">
+              Deactivate Account
+              </label>
             </div>
 
 

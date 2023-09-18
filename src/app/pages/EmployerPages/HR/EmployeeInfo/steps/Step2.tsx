@@ -159,20 +159,6 @@ const Step2: FC = () => {
 
   return (
     <div className='w-100'>
-     
-
-
-      <div className='mb-10 fv-row'>
-
-        <Field
-          type='text'
-          className='form-control form-control-lg form-control-solid'
-          name='accountName'
-        />
-        <div className='text-danger mt-2'>
-          <ErrorMessage name='accountName' />
-        </div>
-      </div>
       
       <div className='pb-10 pb-lg-15'>
         <h4 className='fw-bolder text-danger'>Corporate Details</h4>
@@ -209,7 +195,7 @@ const Step2: FC = () => {
 
 
             <div className='row mb-1'>
-            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Place of Work</label>
+            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Workplace</label>
               <div className='col-lg-3 fv-row'>
                 <input
                       type='text'
@@ -398,15 +384,28 @@ const Step2: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Employee Status /Company</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Division</label>
               <div className='col-lg-3 fv-row'>
-              <input
-                      type='text'
-                      className='form-control form-control-lg form-control-solid fs-8 bg-body-secondary'
-                      placeholder='TM, TD, Family, Script'
-                      value={EmployeeStatus} // Bind the value to the state
-                      onChange={handleEmployeeStatusChange} // Handle changes in the input
-                    />
+              <select className="form-select form-select-solid fs-7 bg-body-secondary" aria-label="Select example"
+              value={Division} // Bind the value to the state
+              onChange={handleDivisionChange} // Handle changes in the input 
+              >
+              <option value="Admin">Admin</option>
+              <option value="Finance">Finance</option>
+              <option value="Accounts">Accounts</option>
+              <option value="HR">HR</option>
+              <option value="Mass support">Mass support</option>
+              <option value="Public relation Officer">Public relation Officer</option>
+              <option value="Software Engineer">Software Engineer</option>
+              <option value="Project Management">Project Management</option>
+              <option value="Support Engineer">Support Engineer</option>
+              <option value="Software Developer">Software Developer</option>
+              <option value="Programmer">Programmer</option>
+              <option value="Data Entry">Data Entry</option>
+              <option value="Digital Marketing">Digital Marketing</option>
+              <option value="Sales">Sales</option>
+              <option value="Graphic Designer">Graphic Designer</option>
+              </select>
               </div>
             </div>
 
@@ -436,7 +435,7 @@ const Step2: FC = () => {
             </div>
 
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Work Status</label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Employee Work Status</label>
               <div className='col-lg-3 fv-row'>
               <select className="form-select form-select-solid fs-7 bg-body-secondary" aria-label="Select example"
                value={WorkStatus} // Bind the value to the state
@@ -450,29 +449,7 @@ const Step2: FC = () => {
               </div>
               <label className='col-lg-1'></label>
 
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Division</label>
-              <div className='col-lg-3 fv-row'>
-              <select className="form-select form-select-solid fs-7 bg-body-secondary" aria-label="Select example"
-              value={Division} // Bind the value to the state
-              onChange={handleDivisionChange} // Handle changes in the input 
-              >
-              <option value="Admin">Admin</option>
-              <option value="Finance">Finance</option>
-              <option value="Accounts">Accounts</option>
-              <option value="HR">HR</option>
-              <option value="Mass support">Mass support</option>
-              <option value="Public relation Officer">Public relation Officer</option>
-              <option value="Software Engineer">Software Engineer</option>
-              <option value="Project Management">Project Management</option>
-              <option value="Support Engineer">Support Engineer</option>
-              <option value="Software Developer">Software Developer</option>
-              <option value="Programmer">Programmer</option>
-              <option value="Data Entry">Data Entry</option>
-              <option value="Digital Marketing">Digital Marketing</option>
-              <option value="Sales">Sales</option>
-              <option value="Graphic Designer">Graphic Designer</option>
-              </select>
-              </div>
+              
             </div>
 
 

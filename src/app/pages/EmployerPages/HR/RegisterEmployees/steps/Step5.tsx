@@ -7,12 +7,9 @@ const Step5: FC = () => {
     <div className='w-100'>
 
 
-      {/* <div className='pb-10 pb-lg-15'>
+      <div className='pb-10 pb-lg-15'>
         <h4 className='fw-bolder text-danger'>Create Employee Username & Password</h4>
-        <div className='text-gray-400 fw-bold fs-7'>
-          You need to enter the employee family members details.
-        </div>
-      </div> */}
+      </div>
 
       <div className='mb-0'>
         <div className='notice d-flex bg-light-warning rounded border-warning border border-dashed p-4'>

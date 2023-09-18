@@ -27,7 +27,6 @@ import {DocumentRenewal} from "../pages/EmployerPages/Organisation/DocumentRenew
 import {CompanyDocs} from '../pages/EmployerPages/Organisation/CompanyDocs'
 import {BankGuarantee} from '../pages/EmployerPages/Organisation/BankGaurentee'
 import {ProductsServices} from '../pages/EmployerPages/Organisation/ProductsServices'
-import {AddAccount, AddAccounts} from "../pages/EmployerPages/HR/AddAccount"
 import {Register} from "../pages/EmployerPages/HR/RegisterEmployees/Register"
 import {EmployeeInfo} from "../pages/EmployerPages/HR/EmployeeInfo/EmployeeInfo"
 import {Policy} from "../pages/EmployerPages/Leave/Policies"
@@ -49,6 +48,8 @@ import {OverallPolicies} from "../pages/EmployeePages/OverallPolicies/OverallPol
 import {EmployeeKPI} from "../pages/EmployeePages/KPI/EmployeeKPI"
 import { Login } from '@mui/icons-material'
 
+import {Test} from "../pages/EmployeePages/KPI/test"
+
 
 const PrivateRoutes = () => {
   const ProfilePage = lazy(() => import('../modules/profile/ProfilePage'))
@@ -65,6 +66,8 @@ const PrivateRoutes = () => {
         <Route path='auth/*' element={<Navigate to='/EmployeePages/Dashboard' />} />
         {/* Pages */}
 
+        <Route path="/EmployeePages/KPI/test" element={<Test />} />
+
         <Route path="*" element={<Login />} />
         <Route path="employer/dashboard" element={<EmployerDashboard />} />
 
@@ -79,7 +82,7 @@ const PrivateRoutes = () => {
         <Route path="employer/hr/payroll" element={<Payroll/>} />
         <Route path="employer/hr/folder" element={<EmployeeDoc />} />
         
-        <Route path="employer/hr/addAccount" element={<AddAccounts />} />
+
         <Route path="employer/hr/RegisterEmployees/Register" element={<Register />} />
         <Route path="employer/hr/EmployeeInfo/EmployeeInfo" element={<EmployeeInfo />} />
         <Route path="employer/hr/letters" element={<HRLetters />} />

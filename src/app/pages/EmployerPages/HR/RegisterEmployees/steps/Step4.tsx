@@ -88,7 +88,7 @@ const Step4: FC = () => {
             </div>
 
             <div className='row mb-1'>
-            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Pasport Number</label>
+            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Passport Number</label>
               <div className='col-lg-3 fv-row'>
               <input
                       type='number'
@@ -476,7 +476,7 @@ const Step4: FC = () => {
       </div>
 
       <div className='row mb-1'>
-      <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Pasport Number</label>
+      <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Passport Number</label>
         <div className='col-lg-3 fv-row'>
         <input
                 type='number'

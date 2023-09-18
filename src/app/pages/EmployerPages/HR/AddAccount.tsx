@@ -168,6 +168,7 @@ const AddAccount = Yup.object().shape({
                       type='text'
                       className='form-control form-control-lg form-control-solid mb-3 mb-lg-0 border border-primary'
                       placeholder='First name'
+                      required
                       {...formik.getFieldProps('fName')}
                     />
               </div>

@@ -16,6 +16,19 @@ const EmployeeKPI :FC = () =>{
 
     return <>
 
+ <div className='d-flex align-items-center w-200px w-sm-300px flex-column mt-3'>
+                <div className='d-flex justify-content-between w-100 mt-auto mb-2'>
+                  <span className='fw-bold fs-6 text-gray-400'>Profile Compleation</span>
+                  <span className='fw-bolder fs-6'>5/10</span>
+                </div>
+                <div className='h-5px mx-3 w-100 bg-body-secondary mb-3'>
+                  <div
+                    className='bg-primary rounded h-5px'
+                    role='progressbar'
+                    style={{width: '50%'}}
+                  ></div>
+                </div>
+              </div>
 
 
 <ul className="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6">
@@ -61,6 +74,7 @@ const EmployeeKPI :FC = () =>{
     </a>
   </li>
 </ul>
+
 <div className="tab-content" id="myTabContent">
   <div
     className="tab-pane fade show active"

@@ -63,9 +63,9 @@ const Register = () => {
       id='kt_create_account_stepper'
     >
       {/* begin::Aside*/}
-      <div className='card d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-300px w-xxl-400px me-9'>
+      <div className='card d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-200px w-xxl-400px me-5'>
         {/* begin::Wrapper*/}
-        <div className='card-body px-6 px-lg-10 px-xxl-10 py-20'>
+        <div className='card-body px-6 px-lg-6 px-xxl-6 py-20'>
           {/* begin::Nav*/}
           <div className='stepper-nav'>
             {/* begin::Step 1*/}
@@ -81,9 +81,9 @@ const Register = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h6 className='stepper-title fs-6'>Personal Details</h6>
+                  <h6 className='stepper-title fs-7'>Personal Details</h6>
 
-                  <div className='stepper-desc fw-semibold fs-7'>Enter Employee Personal Details</div>
+                  <div className='stepper-desc fw-semibold fs-8'>Enter Employee Personal Details</div>
                 </div>
                 {/* end::Label*/}
               </div>
@@ -108,8 +108,8 @@ const Register = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h6 className='stepper-title fs-6'>Corporate Details</h6>
-                  <div className='stepper-desc fw-semibold fs-7'>Enter Employee Corporate Details</div>
+                  <h6 className='stepper-title fs-7'>Corporate Details</h6>
+                  <div className='stepper-desc fw-semibold fs-8'>Enter Employee Corporate Details</div>
                 </div>
                 {/* end::Label*/}
               </div>
@@ -134,8 +134,8 @@ const Register = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h6 className='stepper-title fs-6'>Set Job Description</h6>
-                  <div className='stepper-desc fw-semibold fs-7'>Enter Employee Responsibilities & Benefits</div>
+                  <h6 className='stepper-title fs-7'>Job Description & Benefits</h6>
+                  <div className='stepper-desc fw-semibold fs-8'>Set Responsibilities & Benefits</div>
                 </div>
                 {/* end::Label*/}
               </div>
@@ -160,8 +160,8 @@ const Register = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h6 className='stepper-title fs-6'>Add Family Members</h6>
-                  <div className='stepper-desc fw-semibold fs-7'>Enter Employee Family Members Details</div>
+                  <h6 className='stepper-title fs-7'>Add Family Members</h6>
+                  <div className='stepper-desc fw-semibold fs-8'>Enter Employee Family Members Details</div>
                 </div>
                 {/* end::Label*/}
               </div>
@@ -186,8 +186,8 @@ const Register = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h6 className='stepper-title fs-6'>Set Username & Password</h6>
-                  <div className='stepper-desc fw-semibold fs-7'>Create System Username & Password</div>
+                  <h6 className='stepper-title fs-7'>Set Username & Password</h6>
+                  <div className='stepper-desc fw-semibold fs-8'>Create System Username & Password</div>
                 </div>
                 {/* end::Label*/}
               </div>
@@ -204,7 +204,7 @@ const Register = () => {
       <div className='card d-flex flex-row-fluid flex-center bg-white rounded'>
         <Formik validationSchema={currentSchema} initialValues={initValues} onSubmit={submitStep}>
           {() => (
-            <Form className='py-5 w-100 w-xl-700px' noValidate id='kt_create_account_form'>
+            <Form className='py-10 w-100 w-xl-700px' noValidate id='kt_create_account_form'>
               <div className='current' data-kt-stepper-element='content'>
                 <Step1 />
               </div>

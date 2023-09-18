@@ -53,6 +53,7 @@ const SidebarMenuMain = () => {
         <SidebarMenuItem to='/EmployeePages/Folder'  iconpath='/media/icons/duotune/files/fil012.svg' title='My Folder' fontIcon='bi-layers' />
         <SidebarMenuItem to='/EmployeePages/OverallPolicies'  iconpath='/media/icons/duotune/general/gen051.svg' title='Company Documents' fontIcon='bi-layers' />
         <SidebarMenuItem to='/EmployeePages/KPI/EmployeeKPI'  icon='ranking' title='My KPI' fontIcon='bi-layers' />
+        <SidebarMenuItem to='/EmployeePages/KPI/test'  icon='ranking' title='Testing' fontIcon='bi-layers' />
         
 
 
@@ -194,13 +195,6 @@ const SidebarMenuMain = () => {
               fontIcon='bi-app-indicator'
               hasBullet={true} 
             />
-            <SidebarMenuItem
-              to='employer/hr/addAccount'
-              icon=''
-              title='Employee Details OLD'
-              fontIcon='bi-app-indicator'
-              hasBullet={true} 
-            />
         </SidebarMenuItemWithSub>
 
       <SidebarMenuItemWithSub
@@ -278,8 +272,8 @@ const SidebarMenuMain = () => {
 
           
 
-      
-{/*        
+{/*       
+       
       <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
           <span className='menu-section text-muted text-uppercase fs-8 ls-1'>Crafted</span>

@@ -1,7 +1,7 @@
 import * as Yup from 'yup'
 
 export interface ICreateAccount {
-  accountType: string
+  fName: string
   accountTeamSize: string
   accountName: string
   accountPlan: string
@@ -20,10 +20,10 @@ export interface ICreateAccount {
 
 const createAccountSchemas = [
   Yup.object({
-    accountType: Yup.string().required().label('Account Type'),
+    fName: Yup.string().required().label('First Name'),
   }),
   Yup.object({
-    accountName: Yup.string().required().label('Account Name'),
+    accountName: Yup.string().label('Account Name'),
   }),
   Yup.object({
     businessName: Yup.string().required().label('Business Name'),
@@ -41,7 +41,7 @@ const createAccountSchemas = [
 ]
 
 const inits: ICreateAccount = {
-  accountType: 'personal',
+  fName: 'personal',
   accountTeamSize: '50+',
   accountName: '',
   accountPlan: '1',

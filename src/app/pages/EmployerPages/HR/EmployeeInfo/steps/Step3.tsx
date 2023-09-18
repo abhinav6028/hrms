@@ -33,7 +33,14 @@ const Step3: FC = () => {
       </div>
 
 
-
+      <div className="d-md-flex justify-content-md-end"> 
+      <a className="text-white" data-bs-toggle="collapse" href="#addBenefits" role="button" aria-expanded="false" aria-controls="addBenefits"> 
+        <button type="button" className="btn btn-sm btn-primary btn-active-light-primary me-1 fs-8" title='add new benefits'><i className="bi bi-plus-circle fs-4 me-1 svg-icon-muted"></i> Add</button>
+      </a>
+     
+        <button type="button" className="btn btn-sm btn-danger btn-active-light-danger fs-8" title='save all'><i className="bi bi-check-circle fs-4 me-1 svg-icon-muted"></i> save</button>
+    
+      </div>
 
 
       <div className="d-md-flex justify-content-md-center" > 
@@ -107,6 +114,19 @@ const Step3: FC = () => {
                   </label>
                 </td>
             </tr>
+            <div className="collapse py-3" id="addBenefits">
+              <tr>
+                <td className='text-primary fw-bold'>
+                  <div className="form-check form-check-custom form-check-solid">
+                  <input className="form-check-input border border-primary" type="checkbox" value="" id="flexCheckDefault"/>
+                  <label className="form-check-label">
+                  <span className='fw-bold text-danger mt-1 fs-8'><span className="datafield" contentEditable="true">Enter New Benefit Name</span></span>
+                  </label>
+                 </div>
+
+                </td>
+              </tr>
+           </div>
 
         </tbody>
      </table>
