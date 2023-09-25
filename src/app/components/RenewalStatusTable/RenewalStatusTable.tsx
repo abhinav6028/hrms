@@ -306,7 +306,8 @@ const RenewalStatusTable = () => {
 
   return (
     <>
-    <h1 className="text-primary mb-10"><i className="bi bi-file-earmark-text fs-2hx me-3 svg-icon-muted text-primary"></i>  {/* icon  */} Employee Document Renewal Status</h1>
+<h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Document Renewal Status</h5>
+
         <div className={`card`}>
             {/* begin::Header */}
             <div className='card-header border-0 pt-5 pb-2'>

@@ -15,7 +15,7 @@ const Step3: FC = () => {
 
 
       <div className='fv-row mb-10'>
-        <label className='form-label text-primary fw-bold'><i className="bi bi-person-lines-fill fs-3 svg-icon-muted text-primary me-3"></i>Job Description / Employee Responsibilities</label>
+        <label className='form-label text-primary fw-bold'><i className="bi bi-person-lines-fill fs-3 svg-icon-muted text-primary me-3"></i>Job Description / Employee Responsibilities <span className='text-danger'>*</span></label>
 
         <Field
           as='textarea'

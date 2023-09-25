@@ -15,7 +15,7 @@ function Test() {
         customHeaders: ['General Question', 'My Rating'],
         customRows: [
           [
-            'What strategies have you employed to enhance your performance in these areas?',
+            'What strategies have you employed to enhance your performance?',
             // column 2
             <div className="rating">
             <label className="rating-label" htmlFor="kt_rating_input_1">
@@ -366,44 +366,92 @@ function Test() {
 
   // **********************************************************KPI Report and Summary 
   const tablesDataSummary = [
-    {
-      tableId: 1,
-      title: 'Question 1',
-      customHeadersSummary: ['Question', 'Employee Rating'],
-      customRowsSummary: [
-        [
-          'What strategies have you employed to enhance your performance in these areas?',
-          (
-            <div className="rating">
-              <div className="rating-label checked">
-                <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
-              </div>
-              <div className="rating-label checked">
-                <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
-              </div>
-              <div className="rating-label checked">
-                <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
-              </div>
-              <div className="rating-label checked">
-                <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
-              </div>
-              <div className="rating-label">
-                <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
-              </div>
+  {
+    tableId: 1,
+    title: 'Question 1',
+    customHeadersSummary: [
+      'Question',
+      'Employee Rating',
+      'Employee Comments',
+      'Line Manager 1 Rating',
+      'Line Manager 1 Comments',
+      'Line Manager 2 Rating',
+      'Line Manager 2 Comments',
+    ],
+    customRowsSummary: [
+      {
+        Question: 'What strategies have you employed to enhance your performance in these areas?',
+        'Employee Rating': (
+          <div className="rating">
+            <div className="rating-label checked">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
             </div>
-          ),
-        ],
-        [
-          'I have no Comments',
-          '',
-        ],
-      ],
-    },
-  ];
-  
-  
-  
-  
+            <div className="rating-label checked">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+            <div className="rating-label checked">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+            <div className="rating-label checked">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+            <div className="rating-label">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+          </div>
+        ),
+        'Employee Comments': 'i have no comment',
+        'Line Manager 1 Rating': (
+          <div className="rating">
+            <div className="rating-label checked">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+            <div className="rating-label checked">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+            <div className="rating-label checked">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+            <div className="rating-label checked">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+            <div className="rating-label">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+          </div>
+        ),
+        
+       
+        'Line Manager 1 Comments': 'proactive approach to professional growth, along with their consistent achievements, exemplify their dedication to both personal development and the betterment of our organization.',
+        'Line Manager 2 Rating': (
+          <div className="rating">
+            <div className="rating-label checked">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+            <div className="rating-label checked">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+            <div className="rating-label checked">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+            <div className="rating-label">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+            <div className="rating-label">
+              <KTSVG path="/media/icons/duotune/general/gen029.svg" className="svg-icon svg-icon-1" />
+            </div>
+          </div>
+        ),
+        'Line Manager 2 Comments': 'Consistently exceeding expectations and delivering exceptional results, your performance sets an inspiring standard for excellence.',
+      },
+      // Add more rows as needed
+    ],
+  },
+  // Add more table data objects as needed
+];
+
+
+
   
  
 
@@ -437,6 +485,10 @@ function Test() {
 
   return (
 <>
+
+<h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} My KPI Details</h5>
+
+
     <ul className="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6 mb-10 d-md-flex justify-content-md-center">
     <li className="nav-item">
   <a className="nav-link active" data-bs-toggle="tab" href="#KPI_Question">
@@ -630,31 +682,45 @@ function Test() {
     {/* <h1>{currentTableDataSummary.title}</h1> */}
   </Card.Header>
   <Card.Body className='mb-10 mt-5 p-20'>
-    <table className="table table-rounded border border-gray-100 table-row-bordered table-row-gray-100 gy-4 gs-7 shadow" style={{ background: "#f0eded" }}>
-      <thead>
-        {/* Original header row */}
-        <tr className="fw-bold fs-6 text-white" style={{ background: "#6255a3" }}>
-          {currentTableDataSummary?.customHeadersSummary?.map((headerSummary, indexSummary) => (
-            <th key={indexSummary}>{headerSummary}</th>
+
+  <div>
+  {tablesDataSummary.map((currentTableDataSummary, index) => (
+    <div key={currentTableDataSummary.tableId}>
+      {/* <h1>{currentTableDataSummary.title}</h1> */}
+      <table className="table table-rounded border border-gray-100 table-row-bordered table-row-gray-100  gy-4 gs-7 shadow" style={{ background: "#f0eded" }}>
+        <tbody>
+          {currentTableDataSummary.customHeadersSummary.map((header, indexHeader) => (
+            <tr key={indexHeader}>
+              {header === 'Line Manager 1 Rating' || header === 'Line Manager 1 Comments' || header === 'Line Manager 2 Rating' || header === 'Line Manager 2 Comments' ? (
+                <th className="fw-bold text-white" style={{ background: "#143983", width: "150px" }}>
+                  {header}
+                </th>
+              ) : (
+                <>
+                  <th className="fw-bold text-white" style={{ background: "#6255a3", width: "150px" }}>
+                    {header} 
+                  </th>
+                </>
+              )}
+              {currentTableDataSummary.customRowsSummary.map((row, indexRow) => (
+                <td className="fw-bold text-primary" key={indexRow} style={{ height: '60px' }}>
+                  {(row as any)[header]} {/* Type assertion */}
+                </td>
+              ))}
+            </tr>
           ))}
-        </tr>
-      </thead>
-      <tbody>
-        {currentTableDataSummary.customRowsSummary.map((row, rowIndex) => (
-          <tr className="text-primary fw-bold fs-7" key={rowIndex}>
-            {row.map((cell, cellIndex) => (
-              <td key={cellIndex}>{cell}</td>
-            ))}
-          </tr>
-        ))}
-      </tbody>
-      <thead>
-        {/* Additional header row */}
-        <tr className="fw-bold fs-6 text-white" style={{ backgroundColor: "#DF9B00", marginTop: 0 }}>
-          <th colSpan={2}>Line Manager 1</th>
-        </tr>
-      </thead>
-    </table>
+        </tbody>
+      </table>
+    </div>
+  ))}
+</div>
+
+
+
+
+
+
+
     <div className="d-grid gap-2 d-md-flex justify-content-md-between mt-5">
       <Button className="btn btn-sm" variant="primary" onClick={handlePreviousClickSummary} disabled={currentTableIndexSummary === 0}>
         Previous

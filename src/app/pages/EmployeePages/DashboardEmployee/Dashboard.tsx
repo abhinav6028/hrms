@@ -12,7 +12,7 @@ import {
   MixedWidget16,
 } from '../../../../_metronic/partials/widgets'
 
-import { Box, IconButton } from '@mui/material';
+import { Box, IconButton, Link } from '@mui/material';
 import { Archive, Delete, Edit, DocumentScanner } from '@mui/icons-material';
 
 import {
@@ -37,56 +37,89 @@ const DashboardWrapper :FC = () =>{
 
     return <>
 
+
+
 <h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Dashboard</h5>
 
 <div className='row g-5 g-xl-10 d-flex align-items-stretch'>
-      {/* begin::Col */} 
-      <div className='col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-md-4 text-white'>
-      <a className="text-white" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> 
-        <CardsWidget21
-          className='h-md-30 mb-1 mb-xl-1 p-3 h-100'
-          color='#6255a3'
-          img={toAbsoluteUrl('/media/patterns/vector-1.png')}
-          title='View All The Latest Announcements'
-          description='Announcements'
-          url='#'
-        />
-        </a>
-      </div>
-
-            {/* begin::Col */}
-    <div className='col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-md-4 text-white'>
-      <a className="text-white" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-        <CardsWidget21
-          className='h-md-30 mb-1 mb-xl-1 p-3 h-100'
-          color='#143983'
-          img={toAbsoluteUrl('/media/patterns/vector-1.png')}
-          title='View All Your Expired Documents'
-          description='Expiring Documents'
-          url='#'
-        />
-        </a>
-      </div>
-      
-            {/* begin::Col */}
-    <div className='col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-md-4 text-white'>
-      <a className="text-white" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
-        <CardsWidget21
-          className='h-md-30 mb-1 mb-xl-1 p-3 h-100' 
-          color='#34a8cb'
-          img={toAbsoluteUrl('/media/patterns/vector-1.png')}
-          title='View All Your Leaves Status'
-          description='Leave Status'
-          url='#'
-        />
-        </a>
-      </div>
+  {/* begin::Col 1 */}
+  <div className='col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-md-4 text-white'>
+    <a
+      className="text-white"
+      data-bs-toggle="collapse"
+      href="#collapseExample"
+      role="button"
+      aria-expanded="false"
+      aria-controls="collapseExample"
+      data-bs-target="#collapseExample"
+    >
+      <CardsWidget21
+        className='h-md-30 mb-1 mb-xl-1 p-3 h-100'
+        color='#6255a3'
+        img={toAbsoluteUrl('/media/patterns/vector-1.png')}
+        title='View All The Latest Announcements'
+        description='Announcements'
+        url='#'
+      />
+    </a>
   </div>
 
+  {/* begin::Col 2 */}
+  <div className='col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-md-4 text-white'>
+    <a
+      className="text-white"
+      data-bs-toggle="collapse"
+      href="#collapseExample2"
+      role="button"
+      aria-expanded="false"
+      aria-controls="collapseExample2"
+      data-bs-target="#collapseExample2"
+    >
+      <CardsWidget21
+        className='h-md-30 mb-1 mb-xl-1 p-3 h-100'
+        color='#143983'
+        img={toAbsoluteUrl('/media/patterns/vector-1.png')}
+        title='View All Your Expired Documents'
+        description='Expiring Documents'
+        url='#'
+      />
+    </a>
+  </div>
+
+  {/* begin::Col 3 */}
+  <div className='col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-md-4 text-white'>
+    <a
+      className="text-white"
+      data-bs-toggle="collapse"
+      href="#collapseExample3"
+      role="button"
+      aria-expanded="false"
+      aria-controls="collapseExample3"
+      data-bs-target="#collapseExample3"
+    >
+      <CardsWidget21
+        className='h-md-30 mb-1 mb-xl-1 p-3 h-100'
+        color='#34a8cb'
+        img={toAbsoluteUrl('/media/patterns/vector-1.png')}
+        title='View All Your Leaves Status'
+        description='Leave Status'
+        url='#'
+      />
+    </a>
+  </div>
+</div>
 
  
-<div className="collapse pb-5" id="collapseExample">
- <div className="card borcard-borderedder  bg-primary-subtle">
+<div className='accordion accordion-borderless' id='kt_accordion'>
+  {/* Accordion Item 1 */}
+  <div className='accordion-item bg-transparent pb-3'>
+    <div
+      id='collapseExample'
+      className='accordion-collapse collapse'
+      aria-labelledby='kt_accordion_header_1'
+      data-bs-parent='#kt_accordion'
+    >
+      <div className="card borcard-borderedder  bg-primary-subtle">
   <div className="card-header ribbon ribbon-top ribbon-vertical">
     <div className="ribbon-label" style={{background: "#143983"}}>
       <i className="bi bi-megaphone-fill fs-1 text-white"></i>
@@ -155,7 +188,8 @@ const DashboardWrapper :FC = () =>{
         </div>
       </div> 
   </div>
-</div>
+    </div>
+  </div>
 
 
 
@@ -169,8 +203,14 @@ const DashboardWrapper :FC = () =>{
 
 
 
-<div className="collapse" id="collapseExample2">
-  <div className="card card-body mb-2 text-dark bg-primary-subtle">
+  <div className='accordion-item bg-transparent pb-3'>
+    <div
+      id='collapseExample2'
+      className='accordion-collapse collapse'
+      aria-labelledby='kt_accordion_header_2'
+      data-bs-parent='#kt_accordion'
+    >
+      <div className="card card-body mb-2 text-dark bg-primary-subtle">
   <h6 className="card-title text-primary pt-5 px-5 fs-2"> </h6>       
      
 <div className="card-body">
@@ -435,7 +475,8 @@ const DashboardWrapper :FC = () =>{
         </div>
       </div> 
     </div>
-</div>
+    </div>
+  </div>
         
 
     
@@ -445,8 +486,14 @@ const DashboardWrapper :FC = () =>{
 
 {/*     leave status     */}
 
-<div className="collapse" id="collapseExample3">
-  <div className="card card-body mb-2 bg-primary-subtle">
+<div className='accordion-item bg-transparent pb-3'>
+    <div
+      id='collapseExample3'
+      className='accordion-collapse collapse'
+      aria-labelledby='kt_accordion_header_3'
+      data-bs-parent='#kt_accordion'
+    >
+      <div className="card card-body mb-2 bg-primary-subtle">
       <div className="card-body">
         <div className="tab-content" id="myTabContent">
           <div id="carouselExampleControlsNoTouching" className=" carousel carousel-dark slide " data-bs-touch="false">
@@ -474,7 +521,7 @@ const DashboardWrapper :FC = () =>{
               <div className='col-md-3 col-lg-3 col-xl-3 col-xxl-2'>
               <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#Maternity_Leave_Dates_Table" role="button" aria-expanded="false" aria-controls="Maternity_Leave_Dates_Table">
                 <MixedWidget16
-                  className='h-md-60 mb-5 mb-xl-10'
+                  className='h-md-20 mb-5 mb-xl-10'
                   chartProgressColor='#34a8cb'
                   chartTrackColor='#C0DFE9'
                   chartHeight='250px'
@@ -489,7 +536,7 @@ const DashboardWrapper :FC = () =>{
               <div className='col-md-3 col-lg-3 col-xl-3 col-xxl-2'>
               <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#Paternity_Leave_Dates_Table" role="button" aria-expanded="false" aria-controls="Paternity_Leave_Dates_Table">
                 <MixedWidget16
-                  className='h-md-60 mb-5 mb-xl-10'
+                  className='h-md-20 mb-5 mb-xl-10'
                   chartProgressColor='#6255a3'
                   chartTrackColor='#D1CCEC'
                   chartHeight='250px'
@@ -767,13 +814,530 @@ const DashboardWrapper :FC = () =>{
       </div>
     </div> 
   </div>
+    </div>
+  </div>
 </div>
 
       
 
    
 
-    
+<div className={`card`}>
+      {/* begin::Header */}
+      <div className='card-header border-0 pt-5'>
+        <h3 className='card-title align-items-start flex-column'>
+          <span className='card-label fw-bold fs-3 mb-1'>Employee's Info</span>
+          {/* <span className='text-muted mt-1 fw-semibold fs-7'>More than 400 new authors</span> */}
+        </h3>
+        <div className='card-toolbar'>
+          <ul className='nav'>
+
+            <li className='nav-item'>
+              <a
+                className='nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary fw-bold px-4'
+                data-bs-toggle='tab'
+                href='#kt_table_widget_6_tab_3'
+              >
+                View All
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      {/* end::Header */}
+      {/* begin::Body */}
+      <div className='card-body py-3'>
+        <div className='tab-content'>
+          {/* begin::Tap pane */}
+          <div className='tab-pane fade show active' id='kt_table_widget_6_tab_1'>
+            {/* begin::Table container */}
+            <div className='table-responsive'>
+              {/* begin::Table */}
+              <table className='table align-middle gs-0 gy-3'>
+                {/* begin::Table head */}
+                <thead>
+                  <tr>
+                    <th className='p-0 w-50px'></th>
+                    <th className='p-0 min-w-150px'></th>
+                    <th className='p-0 min-w-140px'></th>
+                    <th className='p-0 min-w-120px'></th>
+                  </tr>
+                </thead>
+                {/* end::Table head */}
+                {/* begin::Table body */}
+                <tbody>
+                  <tr>
+                    <td>
+                      <div className='symbol symbol-50px me-2'>
+                        <span className='symbol-label'>
+                          <img
+                            src={toAbsoluteUrl('/media/svg/avatars/001-boy.svg')}
+                            className='h-75 align-self-end'
+                            alt=''
+                          />
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
+                        Brad Simmons
+                      </a>
+                      <span className='text-muted fw-semibold d-block'>Successful Fellas</span>
+                    </td>
+                    <td>
+                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
+                      <span className='text-dark fw-bold d-block fs-5'>$200,500</span>
+                    </td>
+                    <td className='text-end'>
+                      <span className='text-primary fs-7 fw-bold'>+28%</span>
+                    </td>
+                    <td className='text-end'>
+                      <a
+                        href='#'
+                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
+                      >
+                        <KTIcon iconName='arrow-right' className='fs-2' />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div className='symbol symbol-50px me-2'>
+                        <span className='symbol-label'>
+                          <img
+                            src={toAbsoluteUrl('/media/svg/avatars/018-girl-9.svg')}
+                            className='h-75 align-self-end'
+                            alt=''
+                          />
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
+                        Jessie Clarcson
+                      </a>
+                      <span className='text-muted fw-semibold d-block'>HTML, CSS Coding</span>
+                    </td>
+                    <td>
+                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
+                      <span className='text-dark fw-bold d-block fs-5'>$1,200,000</span>
+                    </td>
+                    <td className='text-end'>
+                      <span className='text-warning fs-7 fw-bold'>+52%</span>
+                    </td>
+                    <td className='text-end'>
+                      <a
+                        href='#'
+                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
+                      >
+                        <KTIcon iconName='arrow-right' className='fs-2' />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div className='symbol symbol-50px me-2'>
+                        <span className='symbol-label'>
+                          <img
+                            src={toAbsoluteUrl('/media/svg/avatars/047-girl-25.svg')}
+                            className='h-75 align-self-end'
+                            alt=''
+                          />
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
+                        Jessie Clarcson
+                      </a>
+                      <span className='text-muted fw-semibold d-block'>PHP, Laravel, VueJS</span>
+                    </td>
+                    <td>
+                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
+                      <span className='text-dark fw-bold d-block fs-5'>$1,200,000</span>
+                    </td>
+                    <td className='text-end'>
+                      <span className='text-danger fs-7 fw-bold'>+52%</span>
+                    </td>
+                    <td className='text-end'>
+                      <a
+                        href='#'
+                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
+                      >
+                        <KTIcon iconName='arrow-right' className='fs-2' />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div className='symbol symbol-50px me-2'>
+                        <span className='symbol-label'>
+                          <img
+                            src={toAbsoluteUrl('/media/svg/avatars/014-girl-7.svg')}
+                            className='h-75 align-self-end'
+                            alt=''
+                          />
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
+                        Natali Trump
+                      </a>
+                      <span className='text-muted fw-semibold d-block'>UI/UX Designer</span>
+                    </td>
+                    <td>
+                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
+                      <span className='text-dark fw-bold d-block fs-5'>$3,400,000</span>
+                    </td>
+                    <td className='text-end'>
+                      <span className='text-success fs-7 fw-bold'>-34%</span>
+                    </td>
+                    <td className='text-end'>
+                      <a
+                        href='#'
+                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
+                      >
+                        <KTIcon iconName='arrow-right' className='fs-2' />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div className='symbol symbol-50px me-2'>
+                        <span className='symbol-label'>
+                          <img
+                            src={toAbsoluteUrl('/media/svg/avatars/043-boy-18.svg')}
+                            className='h-75 align-self-end'
+                            alt=''
+                          />
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
+                        Kevin Leonard
+                      </a>
+                      <span className='text-muted fw-semibold d-block'>Art Director</span>
+                    </td>
+                    <td>
+                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
+                      <span className='text-dark fw-bold d-block fs-5'>$35,600,000</span>
+                    </td>
+                    <td className='text-end'>
+                      <span className='text-info fs-7 fw-bold'>+230%</span>
+                    </td>
+                    <td className='text-end'>
+                      <a
+                        href='#'
+                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
+                      >
+                        <KTIcon iconName='arrow-right' className='fs-2' />
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+                {/* end::Table body */}
+              </table>
+            </div>
+            {/* end::Table */}
+          </div>
+          {/* end::Tap pane */}
+          {/* begin::Tap pane */}
+          <div className='tab-pane fade' id='kt_table_widget_6_tab_2'>
+            {/* begin::Table container */}
+            <div className='table-responsive'>
+              {/* begin::Table */}
+              <table className='table align-middle gs-0 gy-3'>
+                {/* begin::Table head */}
+                <thead>
+                  <tr>
+                    <th className='p-0 w-50px'></th>
+                    <th className='p-0 min-w-150px'></th>
+                    <th className='p-0 min-w-140px'></th>
+                    <th className='p-0 min-w-120px'></th>
+                  </tr>
+                </thead>
+                {/* end::Table head */}
+                {/* begin::Table body */}
+                <tbody>
+                  <tr>
+                    <td>
+                      <div className='symbol symbol-50px me-2'>
+                        <span className='symbol-label'>
+                          <img
+                            src={toAbsoluteUrl('/media/svg/avatars/018-girl-9.svg')}
+                            className='h-75 align-self-end'
+                            alt=''
+                          />
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
+                        Jessie Clarcson
+                      </a>
+                      <span className='text-muted fw-semibold d-block'>HTML, CSS Coding</span>
+                    </td>
+                    <td>
+                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
+                      <span className='text-dark fw-bold d-block fs-5'>$1,200,000</span>
+                    </td>
+                    <td className='text-end'>
+                      <span className='text-warning fs-7 fw-bold'>+52%</span>
+                    </td>
+                    <td className='text-end'>
+                      <a
+                        href='#'
+                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
+                      >
+                        <KTIcon iconName='arrow-right' className='fs-2' />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div className='symbol symbol-50px me-2'>
+                        <span className='symbol-label'>
+                          <img
+                            src={toAbsoluteUrl('/media/svg/avatars/014-girl-7.svg')}
+                            className='h-75 align-self-end'
+                            alt=''
+                          />
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
+                        Natali Trump
+                      </a>
+                      <span className='text-muted fw-semibold d-block'>UI/UX Designer</span>
+                    </td>
+                    <td>
+                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
+                      <span className='text-dark fw-bold d-block fs-5'>$3,400,000</span>
+                    </td>
+                    <td className='text-end'>
+                      <span className='text-success fs-7 fw-bold'>-34%</span>
+                    </td>
+                    <td className='text-end'>
+                      <a
+                        href='#'
+                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
+                      >
+                        <KTIcon iconName='arrow-right' className='fs-2' />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div className='symbol symbol-50px me-2'>
+                        <span className='symbol-label'>
+                          <img
+                            src={toAbsoluteUrl('/media/svg/avatars/001-boy.svg')}
+                            className='h-75 align-self-end'
+                            alt=''
+                          />
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
+                        Brad Simmons
+                      </a>
+                      <span className='text-muted fw-semibold d-block'>Successful Fellas</span>
+                    </td>
+                    <td>
+                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
+                      <span className='text-dark fw-bold d-block fs-5'>$200,500</span>
+                    </td>
+                    <td className='text-end'>
+                      <span className='text-primary fs-7 fw-bold'>+28%</span>
+                    </td>
+                    <td className='text-end'>
+                      <a
+                        href='#'
+                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
+                      >
+                        <KTIcon iconName='arrow-right' className='fs-2' />
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+                {/* end::Table body */}
+              </table>
+            </div>
+            {/* end::Table */}
+          </div>
+          {/* end::Tap pane */}
+          {/* begin::Tap pane */}
+          <div className='tab-pane fade' id='kt_table_widget_6_tab_3'>
+            {/* begin::Table container */}
+            <div className='table-responsive'>
+              {/* begin::Table */}
+              <table className='table align-middle gs-0 gy-3'>
+                {/* begin::Table head */}
+                <thead>
+                  <tr>
+                    <th className='p-0 w-50px'></th>
+                    <th className='p-0 min-w-150px'></th>
+                    <th className='p-0 min-w-140px'></th>
+                    <th className='p-0 min-w-120px'></th>
+                  </tr>
+                </thead>
+                {/* end::Table head */}
+                {/* begin::Table body */}
+                <tbody>
+                  <tr>
+                    <td>
+                      <div className='symbol symbol-50px me-2'>
+                        <span className='symbol-label'>
+                          <img
+                            src={toAbsoluteUrl('/media/svg/avatars/047-girl-25.svg')}
+                            className='h-75 align-self-end'
+                            alt=''
+                          />
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
+                        Jessie Clarcson
+                      </a>
+                      <span className='text-muted fw-semibold d-block'>HTML, CSS Coding</span>
+                    </td>
+                    <td>
+                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
+                      <span className='text-dark fw-bold d-block fs-5'>$1,200,000</span>
+                    </td>
+                    <td className='text-end'>
+                      <span className='text-danger fs-7 fw-bold'>+52%</span>
+                    </td>
+                    <td className='text-end'>
+                      <a
+                        href='#'
+                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
+                      >
+                        <KTIcon iconName='arrow-right' className='fs-2' />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div className='symbol symbol-50px me-2'>
+                        <span className='symbol-label'>
+                          <img
+                            src={toAbsoluteUrl('/media/svg/avatars/014-girl-7.svg')}
+                            className='h-75 align-self-end'
+                            alt=''
+                          />
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
+                        Natali Trump
+                      </a>
+                      <span className='text-muted fw-semibold d-block'>UI/UX Designer</span>
+                    </td>
+                    <td>
+                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
+                      <span className='text-dark fw-bold d-block fs-5'>$3,400,000</span>
+                    </td>
+                    <td className='text-end'>
+                      <span className='text-success fs-7 fw-bold'>-34%</span>
+                    </td>
+                    <td className='text-end'>
+                      <a
+                        href='#'
+                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
+                      >
+                        <KTIcon iconName='arrow-right' className='fs-2' />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div className='symbol symbol-50px me-2'>
+                        <span className='symbol-label'>
+                          <img
+                            src={toAbsoluteUrl('/media/svg/avatars/043-boy-18.svg')}
+                            className='h-75 align-self-end'
+                            alt=''
+                          />
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
+                        Kevin Leonard
+                      </a>
+                      <span className='text-muted fw-semibold d-block'>Art Director</span>
+                    </td>
+                    <td>
+                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
+                      <span className='text-dark fw-bold d-block fs-5'>$35,600,000</span>
+                    </td>
+                    <td className='text-end'>
+                      <span className='text-info fs-7 fw-bold'>+230%</span>
+                    </td>
+                    <td className='text-end'>
+                      <a
+                        href='#'
+                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
+                      >
+                        <KTIcon iconName='arrow-right' className='fs-2' />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div className='symbol symbol-50px me-2'>
+                        <span className='symbol-label'>
+                          <img
+                            src={toAbsoluteUrl('/media/svg/avatars/001-boy.svg')}
+                            className='h-75 align-self-end'
+                            alt=''
+                          />
+                        </span>
+                      </div>
+                    </td>
+                    <td>
+                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
+                        Brad Simmons
+                      </a>
+                      <span className='text-muted fw-semibold d-block'>Successful Fellas</span>
+                    </td>
+                    <td>
+                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
+                      <span className='text-dark fw-bold d-block fs-5'>$200,500</span>
+                    </td>
+                    <td className='text-end'>
+                      <span className='text-primary fs-7 fw-bold'>+28%</span>
+                    </td>
+                    <td className='text-end'>
+                      <a
+                        href='#'
+                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
+                      >
+                        <KTIcon iconName='arrow-right' className='fs-2' />
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+                {/* end::Table body */}
+              </table>
+            </div>
+            {/* end::Table */}
+          </div>
+          {/* end::Tap pane */}
+        </div>
+      </div>
+      {/* end::Body */}
+    </div>
+
+
+
  </>
 ;
     

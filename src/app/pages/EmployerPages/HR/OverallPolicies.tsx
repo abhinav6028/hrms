@@ -12,7 +12,8 @@ const CompanyOverallPolicies :FC = () =>{
 
 
     
-<h1 className="text-primary mb-5"><i className="bi bi-file-earmark-text fs-2hx me-3 svg-icon-muted text-primary"></i>  {/* icon  */} Add / Delete Company Documents</h1>
+
+<h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */}  View / Add / Delete Company Documents</h5>
 <div className="d-grid gap-2 d-md-flex justify-content-md-end">
     <button type="button"
     className="btn btn-primary btn-sm mb-5"

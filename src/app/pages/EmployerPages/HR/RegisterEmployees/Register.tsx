@@ -55,7 +55,7 @@ const Register = () => {
   return (
 
     <>
-    <h3 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-1 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Registering a New Employee</h3>
+    <h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-1 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Registering a New Employee</h5>
 
     <div
       ref={stepperRef}

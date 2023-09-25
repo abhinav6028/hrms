@@ -7,12 +7,8 @@ import PDFViewer from '../../../components/pdfViewer'
 const LeaveForms :FC = () =>{
     return <>
     
-   
+    <h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Leave Forms Submitted </h5>
       <div className='d-flex flex-wrap flex-stack mb-6'>
-        <h3 className='fw-bolder my-2'>
-          My Folders
-          <span className='fs-6 text-gray-400 fw-bold ms-1'>100+ resources</span>
-        </h3>
 
         <div className='d-flex my-2'>
           <div className='d-flex align-items-center position-relative me-4'>

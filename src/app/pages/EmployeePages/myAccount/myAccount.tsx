@@ -5,7 +5,8 @@ import {KTIcon, KTSVG, toAbsoluteUrl} from '../../../../_metronic/helpers'
 import {IProfileDetails, profileDetailsInitValues as initialValues} from '../../../modules/accounts/components/settings/SettingsModel'
 import * as Yup from 'yup'
 import {useFormik} from 'formik'
-import { IconButton } from '@mui/material'
+import { Box, IconButton } from '@mui/material'
+import { Archive, Delete, Edit, DocumentScanner } from '@mui/icons-material';
 
 import {Link, useLocation} from 'react-router-dom'
 import {Dropdown1} from '../../../../_metronic/partials'
@@ -186,7 +187,7 @@ const MyAccount = Yup.object().shape({
 
         <div className='d-flex overflow-auto h-55px'>
           <ul className='nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bolder flex-nowrap'>
-            <li className='nav-item mb-5 me-5'>
+            <li className='nav-item mb-5'>
 
                   <a className="nav-link active" data-bs-toggle="tab" href="#Personal_info" >
                   <span className="d-flex flex-column align-items-start ms-2 mb-2">
@@ -195,7 +196,7 @@ const MyAccount = Yup.object().shape({
                   </a>
 
             </li>
-            <li className='nav-item mb-5 me-5'>
+            <li className='nav-item mb-5'>
                 <a className="nav-link" data-bs-toggle="tab" href="#Corporate_info" >
                   <span className="d-flex flex-column align-items-start ms-2 mb-2">
                       <span className="fs-5 fw-bolder text-hover-primary">
@@ -204,7 +205,7 @@ const MyAccount = Yup.object().shape({
                   </span>
                 </a>
             </li>
-            <li className='nav-item mb-5 me-5'>
+            <li className='nav-item mb-5'>
               <a className="nav-link" data-bs-toggle="tab" href="#JobDescription" >
                   <span className="d-flex flex-column align-items-start ms-2 mb-2">
                       <span className="fs-5 fw-bolder text-hover-primary">Job Description & Company Benefits</span>
@@ -215,6 +216,13 @@ const MyAccount = Yup.object().shape({
               <a className="nav-link" data-bs-toggle="tab" href="#Family_Members" >
                   <span className="d-flex flex-column align-items-start ms-2 mb-2">
                       <span className="fs-5 fw-bolder text-hover-primary">Family Members Details</span>
+                  </span>
+              </a>
+            </li>
+            <li className='nav-item mb-5'>
+              <a className="nav-link" data-bs-toggle="tab" href="#courses" >
+                  <span className="d-flex flex-column align-items-start ms-2 mb-2">
+                      <span className="fs-5 fw-bolder text-hover-primary">Courses</span>
                   </span>
               </a>
             </li>
@@ -459,6 +467,10 @@ const MyAccount = Yup.object().shape({
                 <p className='form-control form-control-lg form-control-solid text-primary bg-body-secondary fs-7'> Active </p>
               </div>
               <label className='col-lg-3'></label>
+              <label className='col-lg-2 col-form-label fw-bold fs-7 text-black-50'> ID access door card no.</label>
+              <div className='col-lg-2 fv-row'>
+                <p className='form-control form-control-lg form-control-solid text-primary bg-body-secondary fs-7'> 13456282 </p>
+              </div>
             </div>
 
          </div>
@@ -1386,7 +1398,344 @@ const MyAccount = Yup.object().shape({
   </div>
 
 
+  {/* courses */}
+<div className="tab-content mb-10" id="myTabContent">
+  <div className="tab-pane fade" id="courses" role="tabpanel">
 
+{/* table start from here  */}
+    <div className={`card ${lastName}`}>
+      {/* begin::Header */}
+      <div className='card-header border-0 pt-5'>
+        <h3 className='card-title align-items-start flex-column'>
+          <span className='card-label fw-bold fs-3 mb-1'>Recent Courses</span>
+          <span className='text-muted mt-1 fw-semibold fs-7'>Over 10 Courses</span>
+        </h3>
+
+      </div>
+      {/* end::Header */}
+      {/* begin::Body */}
+      <div className='card-body py-3'>
+        {/* begin::Table container */}
+        <div className='table-responsive'>
+          {/* begin::Table */}
+          <table className="table table-hover table-striped gs-7" style={{ background: "rgba(20, 57, 131, 0.2)"}}>
+            {/* begin::Table head */}
+            <thead className="bg-primary">
+              <tr className='fw-bold text-white'>
+                <th className='w-25px'>
+                <i className="bi bi-patch-check-fill fs-3 me-2 svg-icon-muted text-white"></i>
+                </th>
+                <th className='min-w-150px'>Courses Name</th>
+                <th className='min-w-140px'>Academy Name</th>
+                <th className='min-w-120px'>Start Date</th>
+                <th className='min-w-120px'>End Date</th>
+                <th className='min-w-120px'>Duration</th>
+                <th className='min-w-120px'>Status</th>
+                <th className='min-w-100px text-end'>View Certificate</th>
+              </tr>
+            </thead>
+            {/* end::Table head */}
+            {/* begin::Table body */}
+            <tbody>
+              <tr>
+                <td>
+                  
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary fs-7'>
+                  .NET Fundamentals
+                  </a>
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  Oracle Academy
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: PH</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  02 April 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: Paid</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  30 Sep 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>
+                    Web, UI/UX Design
+                  </span> */}
+                </td>
+                <td>
+                  <span className='badge badge-light-info fs-7'>101 Days</span>
+                </td>
+                <td>
+                  <span className='badge badge-success fs-7'>Passed</span>
+                </td>
+                <td className='text-end'>
+                  <a href='https://cdn2.me-qr.com/pdf/17059642.pdf' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
+                    <KTIcon iconName='document' className='fs-2x' />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary fs-7'>
+                  ReactJS Fundamentals
+                  </a>
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  Oracle Academy
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: PH</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  02 April 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: Paid</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  30 Sep 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>
+                    Web, UI/UX Design
+                  </span> */}
+                </td>
+                <td>
+                  <span className='badge badge-light-info fs-7'>101 Days</span>
+                </td>
+                <td>
+                  <span className='badge badge-success fs-7'>Passed</span>
+                </td>
+                <td className='text-end'>
+                  <a href='https://cdn2.me-qr.com/pdf/17059642.pdf' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
+                    <KTIcon iconName='document' className='fs-2x' />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary fs-7'>
+                  PL/SQL Fundamentals
+                  </a>
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  Oracle Academy
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: PH</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  02 April 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: Paid</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  30 Sep 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>
+                    Web, UI/UX Design
+                  </span> */}
+                </td>
+                <td>
+                  <span className='badge badge-light-info fs-7'>221 Days</span>
+                </td>
+                <td>
+                  <span className='badge badge-warning fs-7'>In-Process</span>
+                </td>
+                <td className='text-end'>
+                  <a href='https://cdn2.me-qr.com/pdf/17059642.pdf' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
+                    <KTIcon iconName='document' className='fs-2x' />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary fs-7'>
+                  Database Programming
+                  </a>
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  Oracle Academy
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: PH</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  02 April 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: Paid</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  30 Sep 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>
+                    Web, UI/UX Design
+                  </span> */}
+                </td>
+                <td>
+                  <span className='badge badge-light-info fs-7'>101 Days</span>
+                </td>
+                <td>
+                  <span className='badge badge-warning fs-7'>In-Process</span>
+                </td>
+                <td className='text-end'>
+                  <a href='https://cdn2.me-qr.com/pdf/17059642.pdf' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
+                    <KTIcon iconName='document' className='fs-2x' />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary fs-7'>
+                  UI / UX for Beginners
+                  </a>
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  Oracle Academy
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: PH</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  02 April 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: Paid</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  30 Sep 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>
+                    Web, UI/UX Design
+                  </span> */}
+                </td>
+                <td>
+                  <span className='badge badge-light-info fs-7'>30 Days</span>
+                </td>
+                <td>
+                  <span className='badge badge-success fs-7'>Passed</span>
+                </td>
+                <td className='text-end'>
+                  <a href='https://cdn2.me-qr.com/pdf/17059642.pdf' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
+                    <KTIcon iconName='document' className='fs-2x' />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary fs-7'>
+                  CSS/SCSS 
+                  </a>
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  Oracle Academy
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: PH</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  02 April 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: Paid</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  30 Sep 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>
+                    Web, UI/UX Design
+                  </span> */}
+                </td>
+                <td>
+                  <span className='badge badge-light-info fs-7'>101 Days</span>
+                </td>
+                <td>
+                  <span className='badge badge-danger fs-7'>Faild</span>
+                </td>
+                <td className='text-end'>
+                  <a href='https://cdn2.me-qr.com/pdf/17059642.pdf' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
+                    <KTIcon iconName='document' className='fs-2x' />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary fs-7'>
+                  .NET Fundamentals
+                  </a>
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  Oracle Academy
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: PH</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  02 April 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>Code: Paid</span> */}
+                </td>
+                <td>
+                  <a href='#' className='text-dark fw-bold text-hover-primary d-block mb-1 fs-7'>
+                  30 Sep 2022
+                  </a>
+                  {/* <span className='text-muted fw-semibold text-muted d-block fs-7'>
+                    Web, UI/UX Design
+                  </span> */}
+                </td>
+                <td>
+                  <span className='badge badge-light-info fs-7'>101 Days</span>
+                </td>
+                <td>
+                  <span className='badge badge-success fs-7'>Passed</span>
+                </td>
+                <td className='text-end'>
+                  <a href='https://cdn2.me-qr.com/pdf/17059642.pdf' className='btn btn-icon btn-bg-light btn-active-color-primary btn-sm'>
+                    <KTIcon iconName='document' className='fs-2x' />
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+            {/* end::Table body */}
+          </table>
+          {/* end::Table */}
+        </div>
+        {/* end::Table container */}
+      </div>
+      {/* begin::Body */}
+    </div>
+
+  </div>
+</div>
 
     </>
     )

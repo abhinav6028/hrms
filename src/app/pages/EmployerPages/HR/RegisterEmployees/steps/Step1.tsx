@@ -78,7 +78,7 @@ const Step1: FC = () => {
             </div>
             
           <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>First Name</label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>First Name <span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <input
                       type='text'
@@ -88,7 +88,7 @@ const Step1: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Last Name</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Last Name <span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <input
                       type='text'
@@ -101,7 +101,7 @@ const Step1: FC = () => {
 
 
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Nationality</label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Nationality <span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <select className='form-select form-select-solid border fs-7 bg-body-secondary' required>
               <option value='Afghanistan'>Afghanistan</option>
@@ -353,7 +353,7 @@ const Step1: FC = () => {
                 </select>
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Gender</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Gender<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <select className="form-select form-select-solid border fs-7 bg-body-secondary" aria-label="Select example" required>
                 <option value="Male">Male</option>
@@ -363,7 +363,7 @@ const Step1: FC = () => {
             </div>
 
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Material Status</label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Material Status<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <select className="form-select form-select-solid border fs-7 bg-body-secondary" aria-label="Select example">
               <option value="Single">Single</option>
@@ -374,7 +374,7 @@ const Step1: FC = () => {
               </div>
               <label className='col-lg-1'></label>
 
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>ID/RC Number</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>ID/RC Number <span className='text-danger'>*</span></label>
 
               <div className='col-lg-3 fv-row'>
               <input
@@ -386,7 +386,7 @@ const Step1: FC = () => {
             </div>
 
             <div className='row mb-1'>
-             <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Passport Number</label>
+             <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Passport Number<span className='text-danger'>*</span></label>
 
               <div className='col-lg-3 fv-row'>
                 <input
@@ -396,7 +396,7 @@ const Step1: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Years of Experience </label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Years of Experience <span className='text-danger'>*</span></label>
 
               <div className='col-lg-3 fv-row'>
               <input
@@ -409,10 +409,9 @@ const Step1: FC = () => {
             </div>
 
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Passport Exp Date</label>
-
+            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>ID/RC Exp Date <span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
-              <input
+                <input
                       type='date'
                       className='form-control form-control-lg form-control-solid mb-3 mb-lg-0 fs-7 bg-body-secondary'
                       placeholder=''
@@ -421,10 +420,9 @@ const Step1: FC = () => {
 
               <label className='col-lg-1'></label>
 
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>ID/RC Exp Date</label>
-
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Passport Exp Date <span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
-                <input
+              <input
                       type='date'
                       className='form-control form-control-lg form-control-solid mb-3 mb-lg-0 fs-7 bg-body-secondary'
                       placeholder=''
@@ -433,7 +431,7 @@ const Step1: FC = () => {
             </div>
 
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Date Of Birth</label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Date Of Birth <span className='text-danger'>*</span></label>
 
               <div className='col-lg-3 fv-row'>
               <input
@@ -456,7 +454,7 @@ const Step1: FC = () => {
             </div>
 
             <div className='row mb-1'>
-            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Contact Number +968</label>
+            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Contact Number +968 <span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <input
                       type='number'
@@ -465,7 +463,7 @@ const Step1: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Emergency Number</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Emergency Number <span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <input
                       type='number'

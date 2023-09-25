@@ -32,13 +32,12 @@ export type PayrollDetails = {
     transport?: number
     electricity?: number
     water?: number
-    telephone?: number
-    utility?: number
     costOfLeaving?: number
-    meals?: number
-    medical?: number
     motivational?: number
     other?: number
+    gratuity?: number
+    incentives?: number
+    
   };
 
 const PayrollTable = () => {
@@ -233,36 +232,6 @@ const PayrollTable = () => {
                 }
             },
             {
-                accessorKey: 'telephone',
-                header: 'Telephone Allowance',
-                filterFn: 'between',
-                enablePinning: false,
-                size: 100,
-                Header: () => {
-                    return(
-                        <div style={{verticalAlign: 'middle'}}>
-                            <div className='th'>Telephone</div>
-                            <div className='th'>Allowance</div>
-                        </div>
-                    )
-                }
-            },
-            {
-                accessorKey: 'utility',
-                header: 'Utility Allowance',
-                filterFn: 'between',
-                enablePinning: false,
-                size: 100,
-                Header: () => {
-                    return(
-                        <div style={{verticalAlign: 'middle'}}>
-                            <div className='th'>Utility</div>
-                            <div className='th'>Allowance</div>
-                        </div>
-                    )
-                }
-            },
-            {
                 accessorKey: 'costOfLeaving',
                 header: 'Cost of leaving Allowance',
                 filterFn: 'between',
@@ -273,51 +242,6 @@ const PayrollTable = () => {
                         <div style={{verticalAlign: 'middle'}}>
                             <div style={{fontSize:'10px'}}>Cost of Leaving</div>
                             <div style={{fontSize:'10px'}}>Allowance</div>
-                        </div>
-                    )
-                }
-            },
-            {
-                accessorKey: 'meals',
-                header: 'Meals Allowance',
-                filterFn: 'between',
-                enablePinning: false,
-                size: 100,
-                Header: () => {
-                    return(
-                        <div style={{verticalAlign: 'middle'}}>
-                            <div className='th'>Meals</div>
-                            <div className='th'>Allowance</div>
-                        </div>
-                    )
-                }
-            },
-            {
-                accessorKey: 'medical',
-                header: 'Medical Allowance',
-                filterFn: 'between',
-                enablePinning: false,
-                size: 100,
-                Header: () => {
-                    return(
-                        <div style={{verticalAlign: 'middle'}}>
-                            <div className='th'>Medical</div>
-                            <div className='th'>Allowance</div>
-                        </div>
-                    )
-                }
-            },
-            {
-                accessorKey: 'motivational',
-                header: 'Motivational Allowance',
-                filterFn: 'between',
-                enablePinning: false,
-                size: 100,
-                Header: () => {
-                    return(
-                        <div style={{verticalAlign: 'middle'}}>
-                            <div className='th'>Motivational</div>
-                            <div className='th'>Allowance</div>
                         </div>
                     )
                 }
@@ -389,12 +313,42 @@ const PayrollTable = () => {
                     )
                 }
             },
+            {
+                accessorKey: 'gratuity',
+                header: 'Gratuity Amount',
+                filterFn: 'between',
+                enablePinning: false,
+                size: 100,
+                Header: () => {
+                    return(
+                        <div style={{verticalAlign: 'middle'}}>
+                            <div className='th'>Gratuity</div>
+                            <div className='th'>Amount</div>
+                        </div>
+                    )
+                }
+            },
+            {
+                accessorKey: 'incentives',
+                header: 'Incentives Amount',
+                filterFn: 'between',
+                enablePinning: false,
+                size: 100,
+                Header: () => {
+                    return(
+                        <div style={{verticalAlign: 'middle'}}>
+                            <div className='th'>Incentives</div>
+                            <div className='th'>Amount</div>
+                        </div>
+                    )
+                }
+            },
+            
 ],[]);
 
   return (
     <>
-
-    <h1 className="text-primary mb-10"><i className="bi bi-cash-coin fs-2hx me-3 svg-icon-muted text-primary"></i>  {/* icon  */} Employee Payroll Split Details</h1>
+<h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Payroll Split Details</h5>
         <div className={`card`}>
             {/* begin::Header */}
             <div className='card-header border-0 pt-5 pb-2'>

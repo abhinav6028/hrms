@@ -31,7 +31,7 @@ import {
 const DashboardPage: FC = () => (
   <>
 
-<h3 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-1 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employer Dashbord</h3>
+<h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Admin / Employer Dashbord</h5>
 
 
 

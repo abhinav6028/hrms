@@ -447,9 +447,19 @@ const Step2: FC = () => {
               <option value="Retired">Retired</option>
               </select>
               </div>
+
               <label className='col-lg-1'></label>
 
-              
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>ID access door card no.</label>
+              <div className='col-lg-3 fv-row'>
+              <input
+                      type='number'
+                      className='form-control form-control-lg form-control-solid fs-7 bg-body-secondary'
+                      placeholder=''
+                      value={VisaNumber} // Bind the value to the state
+                      onChange={handleVisaNumberChange} // Handle changes in the input
+                    />
+              </div>
             </div>
 
 

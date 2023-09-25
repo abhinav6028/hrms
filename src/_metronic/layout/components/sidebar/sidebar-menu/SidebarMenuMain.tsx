@@ -53,7 +53,7 @@ const SidebarMenuMain = () => {
         <SidebarMenuItem to='/EmployeePages/Folder'  iconpath='/media/icons/duotune/files/fil012.svg' title='My Folder' fontIcon='bi-layers' />
         <SidebarMenuItem to='/EmployeePages/OverallPolicies'  iconpath='/media/icons/duotune/general/gen051.svg' title='Company Documents' fontIcon='bi-layers' />
         <SidebarMenuItem to='/EmployeePages/KPI/EmployeeKPI'  icon='ranking' title='My KPI' fontIcon='bi-layers' />
-        <SidebarMenuItem to='/EmployeePages/KPI/test'  icon='ranking' title='Testing' fontIcon='bi-layers' />
+        <SidebarMenuItem to='/EmployeePages/KPI/test'  icon='ranking' title='KPI Testing' fontIcon='bi-layers' />
         
 
 
@@ -177,7 +177,7 @@ const SidebarMenuMain = () => {
 
       <SidebarMenuItemWithSub
         to=''
-        title='Account Details'
+        title='User Details'
         icon='user-edit'
         fontIcon='bi-app-indicator'
       >
@@ -272,7 +272,7 @@ const SidebarMenuMain = () => {
 
           
 
-{/*       
+      
        
       <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
@@ -373,7 +373,7 @@ const SidebarMenuMain = () => {
           </span>
           <span className='menu-title'>Changelog {process.env.REACT_APP_VERSION}</span>
         </a>
-      </div> */}
+      </div>
 
 <br></br><br></br><br></br><br></br><br></br>
     </>

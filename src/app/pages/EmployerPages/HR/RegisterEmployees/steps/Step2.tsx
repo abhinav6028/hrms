@@ -22,7 +22,7 @@ const Step2: FC = () => {
            
        
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Employee ID</label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Employee ID <span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <select className="form-select form-select-solid fs-7 bg-body-secondary" aria-label="Select example">
                 {[...Array(300)].map((_, index) => (
@@ -34,7 +34,7 @@ const Step2: FC = () => {
 
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Date Of joining</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Date Of joining<span className='text-danger'>*</span></label>
 
               <div className='col-lg-3 fv-row'>
               <input
@@ -47,7 +47,7 @@ const Step2: FC = () => {
 
 
             <div className='row mb-1'>
-            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Workplace</label>
+            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Workplace<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
                 <input
                       type='text'
@@ -78,7 +78,7 @@ const Step2: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Access Door Number</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Access Door Number<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <input
                       type='number'
@@ -93,7 +93,7 @@ const Step2: FC = () => {
             
 
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Visa Exp date</label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Visa Exp date<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <input
                       type='date'
@@ -102,7 +102,7 @@ const Step2: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Visa Number</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Visa Number<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
                 <input
                       type='number'
@@ -114,7 +114,7 @@ const Step2: FC = () => {
 
 
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Department </label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Department<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <input
                       type='text'
@@ -123,7 +123,7 @@ const Step2: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Internal Job Title</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Internal Job Title<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
                 <input
                       type='text'
@@ -135,7 +135,7 @@ const Step2: FC = () => {
 
 
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'> MP JobTitle</label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'> MP JobTitle<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
                 <input
                       type='text'
@@ -144,7 +144,7 @@ const Step2: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>MP Joining Date</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>MP Joining Date<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
                 <input
                       type='date'
@@ -155,7 +155,7 @@ const Step2: FC = () => {
             </div>
 
               <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Total Salary </label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Total Salary<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <input
                       type='number'
@@ -164,7 +164,7 @@ const Step2: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Basic Salary</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Basic Salary<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
                 <input
                       type='number'
@@ -176,7 +176,7 @@ const Step2: FC = () => {
             
            
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Position</label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Position<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <input
                       type='text'
@@ -185,7 +185,7 @@ const Step2: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Health Insurance Policy no.</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Health Insurance Policy no.<span className='text-danger'>*</span></label>
 
               <div className='col-lg-3 fv-row'>
                 <input
@@ -198,7 +198,7 @@ const Step2: FC = () => {
 
 
             <div className='row mb-1'>
-            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Email ID</label>
+            <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Email ID<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <input
                       type='email'
@@ -207,7 +207,7 @@ const Step2: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Division</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>Division<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <select className="form-select form-select-solid fs-7 bg-body-secondary" aria-label="Select example">
               <option value="Admin">Admin</option>
@@ -230,7 +230,7 @@ const Step2: FC = () => {
             </div>
 
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Contract (From)  </label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Contract (From)<span className='text-danger'>*</span></label>
 
               <div className='col-lg-3 fv-row'>
               <input
@@ -240,7 +240,7 @@ const Step2: FC = () => {
                     />
               </div>
               <label className='col-lg-1'></label>
-              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>(To)</label>
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>(To)<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
                 <input
                       type='date'
@@ -251,7 +251,7 @@ const Step2: FC = () => {
             </div>
 
             <div className='row mb-1'>
-              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Employee Work Status</label>
+              <label className='col-lg-2 col-form-label fw-bold fs-8 text-light-emphasis'>Employee Work Status<span className='text-danger'>*</span></label>
               <div className='col-lg-3 fv-row'>
               <select className="form-select form-select-solid fs-7 bg-body-secondary" aria-label="Select example">
               <option value="On Leave">On Leave</option>
@@ -262,7 +262,14 @@ const Step2: FC = () => {
               </div>
               <label className='col-lg-1'></label>
 
-            
+              <label className='col-lg-3 col-form-label fw-bold fs-8 text-light-emphasis'>ID access door card no.<span className='text-danger'>*</span></label>
+              <div className='col-lg-3 fv-row'>
+              <input
+                      type='number'
+                      className='form-control form-control-lg form-control-solid fs-7 bg-body-secondary'
+                      placeholder=''
+                    />
+              </div>
             </div>
 
 

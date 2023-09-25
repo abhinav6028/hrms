@@ -10,7 +10,9 @@ const LeaveNotification: FC = () => {
   return(
     <>
 
-    <h1 className="text-primary mb-10"><i className="bi bi-file-earmark-text fs-2hx me-3 svg-icon-muted text-primary"></i>  {/* icon  */}  Pending Leave Request <span className="badge badge-circle badge-danger">3</span></h1>
+
+    <h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Pending Leave Request <span className="badge badge-circle badge-danger mx-3">3</span></h5>
+
 
       <div className="accordion accordion-icon-toggle" id="kt_accordion_1">
         <div className="card text-white mb-2 mb-xl-5" style={{backgroundColor: '#143983'}}>

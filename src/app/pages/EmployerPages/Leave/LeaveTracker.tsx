@@ -129,7 +129,7 @@ const LeaveTrackerPage: FC = () => {
     return(
         <> 
 
-<h3 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-1 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Leave Tracker</h3>
+<h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-1 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Leave Tracker</h5>
 
             <div className='row g-5 g-xl-8 mb-md-5 mb-xl-5 d-flex justify-content-evenly'>
             <div className='col-md-5 col-xl-5 me-13'>
