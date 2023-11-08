@@ -5,6 +5,7 @@ import ProductsServicesTable from '../../../components/ProductsServicesTable/Pro
 
 const RenewalStatusPage: FC = () => (
     <>
+    <h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Products and Services</h5>
         <div className='row g-5 g-xl-10'>
             <ProductsServicesTable/>
         </div>
@@ -15,7 +16,7 @@ const RenewalStatusPage: FC = () => (
 const ProductsServices: FC = () => {
     return (
       <>
-        <PageTitle breadcrumbs={[]}>Company Documents Renewal</PageTitle>
+       
         <RenewalStatusPage/>
       </>
     )

@@ -20,6 +20,8 @@ type Props = {
 
 const ListsWidget10: React.FC<Props> = ({className,name,details}) => {
   return (
+    <>
+    
     <div className={`card ${className}`}>
       {/* begin::Header */}
       <div className='card-header border-0'>
@@ -113,6 +115,7 @@ const ListsWidget10: React.FC<Props> = ({className,name,details}) => {
       </div>
       {/* end::Body */}
     </div>
+    </>
   )
 }
 

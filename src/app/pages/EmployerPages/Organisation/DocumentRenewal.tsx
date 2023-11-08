@@ -60,6 +60,7 @@ const UtilityBills = [
 const RenewalStatusPage: FC = () => {
     return(
       <>
+      <h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Renewal Company Documents</h5>
           <div className='row g-5 g-xl-10 mb-4 mb-xl-10 d-flex flex-wrap align-content-stretch'>
             <div className="col-md-12 col-lg-6">
               <ListsWidget10 className='h-100 bg-primary-subtle' name='Tamimah Telecom' details={TamimahTelecomData}/>

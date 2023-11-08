@@ -11,14 +11,7 @@ const SidebarMenuMain = () => {
 
   return (
     <>
-      {/* <SidebarMenuItem
-        to='/dashboard'
-        icon='element-11'
-        title={intl.formatMessage({id: 'MENU.DASHBOARD'})}
-        fontIcon='bi-app-indicator'
-      />
-      <SidebarMenuItem to='/builder' icon='switch' title='Layout Builder' fontIcon='bi-layers' />
-      <SidebarMenuItem to='/testPage' icon='switch' title='My Page' fontIcon='bi-layers' /> */}
+
       
 
       <SidebarMenuItem to='/error/login' iconpath='/media/icons/duotune/general/gen008.svg' title='Login Page' />
@@ -52,8 +45,21 @@ const SidebarMenuMain = () => {
         <SidebarMenuItem to='/EmployeePages/MyAccount'  icon='user' title='My Details' fontIcon='bi-layers' />
         <SidebarMenuItem to='/EmployeePages/Folder'  iconpath='/media/icons/duotune/files/fil012.svg' title='My Folder' fontIcon='bi-layers' />
         <SidebarMenuItem to='/EmployeePages/OverallPolicies'  iconpath='/media/icons/duotune/general/gen051.svg' title='Company Documents' fontIcon='bi-layers' />
-        <SidebarMenuItem to='/EmployeePages/KPI/EmployeeKPI'  icon='ranking' title='My KPI' fontIcon='bi-layers' />
-        <SidebarMenuItem to='/EmployeePages/KPI/test'  icon='ranking' title='KPI Testing' fontIcon='bi-layers' />
+        
+        
+        <SidebarMenuItemWithSub
+          to=''
+          title='My KPI'
+          icon='ranking'
+          fontIcon='bi-app-indicator'
+      >
+
+        <SidebarMenuItem to='/EmployeePages/KPI/KPISummary'  icon='ranking' title='KPI Summary' fontIcon='bi-layers' />
+        <SidebarMenuItem to='/EmployeePages/KPI/EmployeeKPIQuestion'  icon='ranking' title='KPI Questions' fontIcon='bi-layers' />
+        </SidebarMenuItemWithSub>
+
+
+        
         
 
 
@@ -132,44 +138,44 @@ const SidebarMenuMain = () => {
       >
         <SidebarMenuItem
           to='employer/hr/employee'
-          icon='people'
+          hasBullet={true}
           title='Employee Profile'
           fontIcon='bi-app-indicator'
         />
         <SidebarMenuItem
           to='employer/hr/insuredStaff'
-          icon='user-tick'
+          hasBullet={true}
           title='Insured Staff'
           fontIcon='bi-app-indicator'
         />
         <SidebarMenuItem
           to='employer/hr/payroll'
-          icon='credit-cart'
+          hasBullet={true}
           title='Payroll'
           fontIcon='bi-app-indicator'
         />
         <SidebarMenuItem
           to='employer/hr/renewal'
-          icon='filter-tablet'
+          hasBullet={true}
           title='Renewal Status'
           fontIcon='bi-app-indicator'
         />
         <SidebarMenuItem
           to='employer/hr/folder'
-          iconpath="/media/icons/duotune/files/fil012.svg"
+          hasBullet={true}
           title='Employees Folder'
           fontIcon='bi-app-indicator'
         />
 
         <SidebarMenuItem
           to='employer/hr/letters'
-          icon='file-sheet'
+          hasBullet={true}
           title='HR Letters Format'
           fontIcon='bi-app-indicator'
         />
         <SidebarMenuItem
           to='employer/hr/OverallPolicies'
-          iconpath='/media/icons/duotune/general/gen051.svg'
+          hasBullet={true}
           title='Company Documents'
           fontIcon='bi-app-indicator'
         />
@@ -274,7 +280,7 @@ const SidebarMenuMain = () => {
 
       
        
-      <div className='menu-item'>
+      {/* <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
           <span className='menu-section text-muted text-uppercase fs-8 ls-1'>Crafted</span>
         </div>
@@ -373,7 +379,7 @@ const SidebarMenuMain = () => {
           </span>
           <span className='menu-title'>Changelog {process.env.REACT_APP_VERSION}</span>
         </a>
-      </div>
+      </div> */}
 
 <br></br><br></br><br></br><br></br><br></br>
     </>

@@ -62,6 +62,9 @@ const EmployeeInfo: FC = () => {
     <h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} View / Edit Employee Information</h5>
 
 
+
+
+
     <ul className="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-5 fs-6 mb-10 d-md-flex justify-content-md-center">
     <li className="nav-item">
   <a className="nav-link active" data-bs-toggle="tab" href="#Employee_info">
@@ -101,10 +104,21 @@ const EmployeeInfo: FC = () => {
 </ul>
 
 <div className="tab-content mb-10" id="myTabContent">
-  <div className="tab-pane fade" id="Employee_info" role="tabpanel">
+  <div className="tab-pane fade show active" id="Employee_info" role="tabpanel">
   
     <div className='card'>
       <div className='card-body'>
+
+            <div className="d-flex flex-wrap flex-stack mb-6">
+              <div className="d-flex my-2">
+                <div className="d-flex align-items-center position-relative me-4">
+                  <i className="ki-duotone ki-magnifier fs-3 position-absolute ms-3">
+                    <span className="path1"></span><span className="path2"></span></i>
+                    <input type="text" id="kt_filter_search" className="form-control form-control-white form-control-sm w-150px ps-9" placeholder="Employee Name"/>
+                </div><a href="" className="btn btn-primary btn-sm">Search</a>
+              </div>
+            </div>
+
         <div
           ref={stepperRef}
           className='stepper stepper-links d-flex flex-column pt-15'
@@ -199,6 +213,17 @@ const EmployeeInfo: FC = () => {
           <span className='card-label fw-bold fs-3 mb-1'>Recent Courses</span>
           <span className='text-muted mt-1 fw-semibold fs-7'>Over 10 Courses</span>
         </h3>
+
+          <div className="d-flex flex-wrap flex-stack mb-6">
+              <div className="d-flex my-2">
+                <div className="d-flex align-items-center position-relative me-4">
+                  <i className="ki-duotone ki-magnifier fs-3 position-absolute ms-3">
+                    <span className="path1"></span><span className="path2"></span></i>
+                    <input type="text" id="kt_filter_search" className="form-control form-control-white form-control-sm w-150px ps-9" placeholder="Employee Name"/>
+                </div><a href="" className="btn btn-primary btn-sm">Search</a>
+              </div>
+            </div>
+
         <button
             type='button'
             className='btn btn-sm btn-icon btn-color-primary btn-active-light-primary'

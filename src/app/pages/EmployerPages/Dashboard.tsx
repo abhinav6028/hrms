@@ -204,8 +204,8 @@ const DashboardPage: FC = () => (
   </table>
 </div>
 
-<div className="card borcard-borderedder mb-10" style={{background: "#f5f5dc"}}>
-  <div className="card-header ribbon ribbon-top ribbon-vertical">
+<div className="card borcard-borderedder mb-10" >
+  <div className="card-header ribbon ribbon-top ribbon-vertical bg-primary-subtle">
     <div className="ribbon-label" style={{background: "#143983"}}>
       <i className="bi bi-megaphone-fill fs-1 text-white"></i>
     </div>

@@ -38,21 +38,12 @@ const DashboardWrapper :FC = () =>{
     return <>
 
 
-
 <h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Dashboard</h5>
 
 <div className='row g-5 g-xl-10 d-flex align-items-stretch'>
   {/* begin::Col 1 */}
   <div className='col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-md-4 text-white'>
-    <a
-      className="text-white"
-      data-bs-toggle="collapse"
-      href="#collapseExample"
-      role="button"
-      aria-expanded="false"
-      aria-controls="collapseExample"
-      data-bs-target="#collapseExample"
-    >
+    <a className="text-white" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" data-bs-target="#collapseExample">
       <CardsWidget21
         className='h-md-30 mb-1 mb-xl-1 p-3 h-100'
         color='#6255a3'
@@ -66,15 +57,7 @@ const DashboardWrapper :FC = () =>{
 
   {/* begin::Col 2 */}
   <div className='col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-md-4 text-white'>
-    <a
-      className="text-white"
-      data-bs-toggle="collapse"
-      href="#collapseExample2"
-      role="button"
-      aria-expanded="false"
-      aria-controls="collapseExample2"
-      data-bs-target="#collapseExample2"
-    >
+  <a className="text-white" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" data-bs-target="#collapseExample2">
       <CardsWidget21
         className='h-md-30 mb-1 mb-xl-1 p-3 h-100'
         color='#143983'
@@ -88,15 +71,7 @@ const DashboardWrapper :FC = () =>{
 
   {/* begin::Col 3 */}
   <div className='col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-md-4 text-white'>
-    <a
-      className="text-white"
-      data-bs-toggle="collapse"
-      href="#collapseExample3"
-      role="button"
-      aria-expanded="false"
-      aria-controls="collapseExample3"
-      data-bs-target="#collapseExample3"
-    >
+  <a className="text-white" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3" data-bs-target="#collapseExample3">
       <CardsWidget21
         className='h-md-30 mb-1 mb-xl-1 p-3 h-100'
         color='#34a8cb'
@@ -218,7 +193,7 @@ const DashboardWrapper :FC = () =>{
     {/* begin::Row */}
        <div className='row g-2 g-xl-4 justify-content-md-center'>
       {/* begin::Col */}
-      <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#6_months_EX_table" role="button" aria-expanded="false" aria-controls="6_months_EX_table">
+      <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#6_months_EX_table" role="button" aria-expanded="false" aria-controls="6_months_EX_table" data-bs-target="#6_months_EX_table">
       <MixedWidget16
           className='h-md-20 mb-5 mb-xl-10'
           chartProgressColor='#143983'
@@ -231,7 +206,7 @@ const DashboardWrapper :FC = () =>{
       </a>
       {/* end::Col */}
       {/* begin::Col */}
-      <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#3_months_EX_table" role="button" aria-expanded="false" aria-controls="3_months_EX_table">
+      <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#6_months_EX_table" role="button" aria-expanded="false" aria-controls="3_months_EX_table" data-bs-target="#3_months_EX_table">
         <MixedWidget16
           className='h-md-60 mb-5 mb-xl-10'
           chartProgressColor='#34a8cb'
@@ -244,7 +219,7 @@ const DashboardWrapper :FC = () =>{
       </a>
       {/* end::Col */}
       {/* begin::Col */}
-      <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#1_months_EX_table" role="button" aria-expanded="false" aria-controls="1_months_EX_table">
+      <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#6_months_EX_table" role="button" aria-expanded="false" aria-controls="1_months_EX_table" data-bs-target="#1_months_EX_table">
         <MixedWidget16
           className='h-md-60 mb-5 mb-xl-10'
           chartProgressColor='#6255a3'
@@ -255,7 +230,7 @@ const DashboardWrapper :FC = () =>{
           // chartTotal='13'
         />
       </a>
-      <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#0_months_EX_table" role="button" aria-expanded="false" aria-controls="0_months_EX_table">
+      <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#0_months_EX_table" role="button" aria-expanded="false" aria-controls="6_months_EX_table" data-bs-target="#0_months_EX_table">
         <MixedWidget16
           className='h-md-60 mb-5 mb-xl-10'
           chartProgressColor='#FF1931'
@@ -270,7 +245,12 @@ const DashboardWrapper :FC = () =>{
       
       
 {/* documents expired in 6 months table */}
-<div className="collapse" id="6_months_EX_table">   
+
+<div className='accordion accordion-borderless' id='kt_accordion2'>
+  {/* Accordion Item 1 */}
+  <div className='accordion-item bg-transparent pb-3'>
+    <div id='6_months_EX_table' className='accordion-collapse collapse' aria-labelledby='kt_accordion2_header_1' data-bs-parent='#kt_accordion2'>
+
   <table className="table table-rounded border border-gray-300 table-row-bordered table-row-gray-300  gy-5 gs-7 bg-white shadow">
     <thead>
         <tr className="fw-bold fs-5 border-bottom border-gray-200 bg-primary text-white">
@@ -318,10 +298,15 @@ const DashboardWrapper :FC = () =>{
     </tbody>
   </table>
 </div>
+</div>
+
+
+
 
 
 {/* documents expired in 3 months table */}
-<div className="collapse" id="3_months_EX_table">   
+<div className='accordion-item bg-transparent pb-3'>
+    <div id='3_months_EX_table' className='accordion-collapse collapse' aria-labelledby='kt_accordion2_header_1' data-bs-parent='#kt_accordion2'>
   <table className="table table-rounded border border-gray-300 table-row-bordered table-row-gray-300  gy-5 gs-7 bg-white shadow">
     <thead>
         <tr className="fw-bold fs-5 border-bottom border-gray-200 bg-primary text-white">
@@ -369,10 +354,12 @@ const DashboardWrapper :FC = () =>{
     </tbody>
   </table>
 </div>
+</div>
 
 
 {/* documents expired in 1 month table */}
-<div className="collapse" id="1_months_EX_table">   
+<div className='accordion-item bg-transparent pb-3'>
+    <div id='1_months_EX_table' className='accordion-collapse collapse' aria-labelledby='kt_accordion2_header_1' data-bs-parent='#kt_accordion2'>
   <table className="table table-rounded border border-gray-300 table-row-bordered table-row-gray-300  gy-5 gs-7 bg-white shadow">
     <thead>
         <tr className="fw-bold fs-5 border-bottom border-gray-200 bg-primary text-white">
@@ -420,10 +407,12 @@ const DashboardWrapper :FC = () =>{
     </tbody>
   </table>
 </div>
+</div>
     
 {/* documents already have expired  */}
 
-<div className="collapse" id="0_months_EX_table">   
+<div className='accordion-item bg-transparent pb-3'>
+    <div id='0_months_EX_table' className='accordion-collapse collapse' aria-labelledby='kt_accordion2_header_1' data-bs-parent='#kt_accordion2'>  
   <table className="table table-rounded border border-gray-300 table-row-bordered table-row-gray-300  gy-5 gs-7 bg-white shadow">
     <thead>
         <tr className="fw-bold fs-5 border-bottom border-gray-200 bg-danger text-white">
@@ -471,6 +460,7 @@ const DashboardWrapper :FC = () =>{
     </tbody>
   </table>
 </div>
+</div>
         </div>
         </div>
       </div> 
@@ -478,7 +468,7 @@ const DashboardWrapper :FC = () =>{
     </div>
   </div>
         
-
+</div>
     
 
 
@@ -824,17 +814,16 @@ const DashboardWrapper :FC = () =>{
 
 <div className={`card`}>
       {/* begin::Header */}
-      <div className='card-header border-0 pt-5'>
+      <div className='card-header border-0 pt-2'>
         <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bold fs-3 mb-1'>Employee's Info</span>
-          {/* <span className='text-muted mt-1 fw-semibold fs-7'>More than 400 new authors</span> */}
+          <span className='card-label fw-bold fs-4 text-primary'>Employee Number</span>
         </h3>
         <div className='card-toolbar'>
           <ul className='nav'>
 
             <li className='nav-item'>
               <a
-                className='nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary fw-bold px-4'
+                className='btn btn-sm btn-primary btn-active-light-primary'
                 data-bs-toggle='tab'
                 href='#kt_table_widget_6_tab_3'
               >
@@ -846,14 +835,14 @@ const DashboardWrapper :FC = () =>{
       </div>
       {/* end::Header */}
       {/* begin::Body */}
-      <div className='card-body py-3'>
+      <div className='card-body py-2'>
         <div className='tab-content'>
           {/* begin::Tap pane */}
           <div className='tab-pane fade show active' id='kt_table_widget_6_tab_1'>
             {/* begin::Table container */}
             <div className='table-responsive'>
               {/* begin::Table */}
-              <table className='table align-middle gs-0 gy-3'>
+              <table className='table table-hover table-striped align-middle gs-0 gy-1' style={{ background: "rgba(20, 57, 131, 0.1)"}}>
                 {/* begin::Table head */}
                 <thead>
                   <tr>
@@ -868,7 +857,7 @@ const DashboardWrapper :FC = () =>{
                 <tbody>
                   <tr>
                     <td>
-                      <div className='symbol symbol-50px me-2'>
+                      <div className='symbol symbol-40px me-2 mx-2'>
                         <span className='symbol-label'>
                           <img
                             src={toAbsoluteUrl('/media/svg/avatars/001-boy.svg')}
@@ -880,29 +869,23 @@ const DashboardWrapper :FC = () =>{
                     </td>
                     <td>
                       <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Brad Simmons
+                        Abdul Aziz
                       </a>
-                      <span className='text-muted fw-semibold d-block'>Successful Fellas</span>
+                      <span className='text-muted fw-semibold d-block'>HR</span>
                     </td>
                     <td>
-                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
-                      <span className='text-dark fw-bold d-block fs-5'>$200,500</span>
+                      <span className='text-muted fw-semibold d-block fs-7'>EXT</span>
+                      <span className='text-primary fw-bold d-block fs-5'>489</span>
                     </td>
-                    <td className='text-end'>
-                      <span className='text-primary fs-7 fw-bold'>+28%</span>
+                    <td>
+                    <span className='text-muted fw-semibold d-block fs-7'>GSM</span>
+                      <span className='text-info fs-7 fw-bold'>97117385</span>
                     </td>
-                    <td className='text-end'>
-                      <a
-                        href='#'
-                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
-                      >
-                        <KTIcon iconName='arrow-right' className='fs-2' />
-                      </a>
-                    </td>
+                    
                   </tr>
                   <tr>
                     <td>
-                      <div className='symbol symbol-50px me-2'>
+                      <div className='symbol symbol-40px me-2 mx-2'>
                         <span className='symbol-label'>
                           <img
                             src={toAbsoluteUrl('/media/svg/avatars/018-girl-9.svg')}
@@ -914,63 +897,22 @@ const DashboardWrapper :FC = () =>{
                     </td>
                     <td>
                       <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Jessie Clarcson
+                        Rajeev
                       </a>
                       <span className='text-muted fw-semibold d-block'>HTML, CSS Coding</span>
                     </td>
                     <td>
-                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
-                      <span className='text-dark fw-bold d-block fs-5'>$1,200,000</span>
+                      <span className='text-muted fw-semibold d-block fs-7'>EXT</span>
+                      <span className='text-primary fw-bold d-block fs-5'>453</span>
                     </td>
-                    <td className='text-end'>
-                      <span className='text-warning fs-7 fw-bold'>+52%</span>
-                    </td>
-                    <td className='text-end'>
-                      <a
-                        href='#'
-                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
-                      >
-                        <KTIcon iconName='arrow-right' className='fs-2' />
-                      </a>
+                    <td>
+                    <span className='text-muted fw-semibold d-block fs-7'>GSM</span>
+                      <span className='text-info fs-7 fw-bold'>95780253</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div className='symbol symbol-50px me-2'>
-                        <span className='symbol-label'>
-                          <img
-                            src={toAbsoluteUrl('/media/svg/avatars/047-girl-25.svg')}
-                            className='h-75 align-self-end'
-                            alt=''
-                          />
-                        </span>
-                      </div>
-                    </td>
-                    <td>
-                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Jessie Clarcson
-                      </a>
-                      <span className='text-muted fw-semibold d-block'>PHP, Laravel, VueJS</span>
-                    </td>
-                    <td>
-                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
-                      <span className='text-dark fw-bold d-block fs-5'>$1,200,000</span>
-                    </td>
-                    <td className='text-end'>
-                      <span className='text-danger fs-7 fw-bold'>+52%</span>
-                    </td>
-                    <td className='text-end'>
-                      <a
-                        href='#'
-                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
-                      >
-                        <KTIcon iconName='arrow-right' className='fs-2' />
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className='symbol symbol-50px me-2'>
+                      <div className='symbol symbol-40px me-2 mx-2'>
                         <span className='symbol-label'>
                           <img
                             src={toAbsoluteUrl('/media/svg/avatars/014-girl-7.svg')}
@@ -982,29 +924,22 @@ const DashboardWrapper :FC = () =>{
                     </td>
                     <td>
                       <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Natali Trump
+                        Arvindo
                       </a>
                       <span className='text-muted fw-semibold d-block'>UI/UX Designer</span>
                     </td>
                     <td>
-                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
-                      <span className='text-dark fw-bold d-block fs-5'>$3,400,000</span>
+                      <span className='text-muted fw-semibold d-block fs-7'>EXT</span>
+                      <span className='text-primary fw-bold d-block fs-5'>488</span>
                     </td>
-                    <td className='text-end'>
-                      <span className='text-success fs-7 fw-bold'>-34%</span>
-                    </td>
-                    <td className='text-end'>
-                      <a
-                        href='#'
-                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
-                      >
-                        <KTIcon iconName='arrow-right' className='fs-2' />
-                      </a>
+                    <td>
+                    <span className='text-muted fw-semibold d-block fs-7'>GSM</span>
+                      <span className='text-info fs-7 fw-bold'>97911889</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div className='symbol symbol-50px me-2'>
+                      <div className='symbol symbol-40px me-2 mx-2'>
                         <span className='symbol-label'>
                           <img
                             src={toAbsoluteUrl('/media/svg/avatars/043-boy-18.svg')}
@@ -1016,151 +951,17 @@ const DashboardWrapper :FC = () =>{
                     </td>
                     <td>
                       <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Kevin Leonard
+                      Rawan
                       </a>
                       <span className='text-muted fw-semibold d-block'>Art Director</span>
                     </td>
                     <td>
-                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
-                      <span className='text-dark fw-bold d-block fs-5'>$35,600,000</span>
-                    </td>
-                    <td className='text-end'>
-                      <span className='text-info fs-7 fw-bold'>+230%</span>
-                    </td>
-                    <td className='text-end'>
-                      <a
-                        href='#'
-                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
-                      >
-                        <KTIcon iconName='arrow-right' className='fs-2' />
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-                {/* end::Table body */}
-              </table>
-            </div>
-            {/* end::Table */}
-          </div>
-          {/* end::Tap pane */}
-          {/* begin::Tap pane */}
-          <div className='tab-pane fade' id='kt_table_widget_6_tab_2'>
-            {/* begin::Table container */}
-            <div className='table-responsive'>
-              {/* begin::Table */}
-              <table className='table align-middle gs-0 gy-3'>
-                {/* begin::Table head */}
-                <thead>
-                  <tr>
-                    <th className='p-0 w-50px'></th>
-                    <th className='p-0 min-w-150px'></th>
-                    <th className='p-0 min-w-140px'></th>
-                    <th className='p-0 min-w-120px'></th>
-                  </tr>
-                </thead>
-                {/* end::Table head */}
-                {/* begin::Table body */}
-                <tbody>
-                  <tr>
-                    <td>
-                      <div className='symbol symbol-50px me-2'>
-                        <span className='symbol-label'>
-                          <img
-                            src={toAbsoluteUrl('/media/svg/avatars/018-girl-9.svg')}
-                            className='h-75 align-self-end'
-                            alt=''
-                          />
-                        </span>
-                      </div>
+                      <span className='text-muted fw-semibold d-block fs-7'>EXT</span>
+                      <span className='text-primary fw-bold d-block fs-5'>459</span>
                     </td>
                     <td>
-                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Jessie Clarcson
-                      </a>
-                      <span className='text-muted fw-semibold d-block'>HTML, CSS Coding</span>
-                    </td>
-                    <td>
-                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
-                      <span className='text-dark fw-bold d-block fs-5'>$1,200,000</span>
-                    </td>
-                    <td className='text-end'>
-                      <span className='text-warning fs-7 fw-bold'>+52%</span>
-                    </td>
-                    <td className='text-end'>
-                      <a
-                        href='#'
-                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
-                      >
-                        <KTIcon iconName='arrow-right' className='fs-2' />
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className='symbol symbol-50px me-2'>
-                        <span className='symbol-label'>
-                          <img
-                            src={toAbsoluteUrl('/media/svg/avatars/014-girl-7.svg')}
-                            className='h-75 align-self-end'
-                            alt=''
-                          />
-                        </span>
-                      </div>
-                    </td>
-                    <td>
-                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Natali Trump
-                      </a>
-                      <span className='text-muted fw-semibold d-block'>UI/UX Designer</span>
-                    </td>
-                    <td>
-                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
-                      <span className='text-dark fw-bold d-block fs-5'>$3,400,000</span>
-                    </td>
-                    <td className='text-end'>
-                      <span className='text-success fs-7 fw-bold'>-34%</span>
-                    </td>
-                    <td className='text-end'>
-                      <a
-                        href='#'
-                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
-                      >
-                        <KTIcon iconName='arrow-right' className='fs-2' />
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className='symbol symbol-50px me-2'>
-                        <span className='symbol-label'>
-                          <img
-                            src={toAbsoluteUrl('/media/svg/avatars/001-boy.svg')}
-                            className='h-75 align-self-end'
-                            alt=''
-                          />
-                        </span>
-                      </div>
-                    </td>
-                    <td>
-                      <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Brad Simmons
-                      </a>
-                      <span className='text-muted fw-semibold d-block'>Successful Fellas</span>
-                    </td>
-                    <td>
-                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
-                      <span className='text-dark fw-bold d-block fs-5'>$200,500</span>
-                    </td>
-                    <td className='text-end'>
-                      <span className='text-primary fs-7 fw-bold'>+28%</span>
-                    </td>
-                    <td className='text-end'>
-                      <a
-                        href='#'
-                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
-                      >
-                        <KTIcon iconName='arrow-right' className='fs-2' />
-                      </a>
+                    <span className='text-muted fw-semibold d-block fs-7'>GSM</span>
+                      <span className='text-info fs-7 fw-bold'>97674982</span>
                     </td>
                   </tr>
                 </tbody>
@@ -1175,7 +976,7 @@ const DashboardWrapper :FC = () =>{
             {/* begin::Table container */}
             <div className='table-responsive'>
               {/* begin::Table */}
-              <table className='table align-middle gs-0 gy-3'>
+              <table className='table table-hover table-striped align-middle gs-0 gy-1' style={{ background: "rgba(20, 57, 131, 0.1)"}}>
                 {/* begin::Table head */}
                 <thead>
                   <tr>
@@ -1190,7 +991,7 @@ const DashboardWrapper :FC = () =>{
                 <tbody>
                   <tr>
                     <td>
-                      <div className='symbol symbol-50px me-2'>
+                      <div className='symbol symbol-40px me-2 mx-2'>
                         <span className='symbol-label'>
                           <img
                             src={toAbsoluteUrl('/media/svg/avatars/047-girl-25.svg')}
@@ -1202,29 +1003,22 @@ const DashboardWrapper :FC = () =>{
                     </td>
                     <td>
                       <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Jessie Clarcson
+                        Arjun
                       </a>
                       <span className='text-muted fw-semibold d-block'>HTML, CSS Coding</span>
                     </td>
                     <td>
-                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
-                      <span className='text-dark fw-bold d-block fs-5'>$1,200,000</span>
+                      <span className='text-muted fw-semibold d-block fs-7'>EXT</span>
+                      <span className='text-primary fw-bold d-block fs-5'>475</span>
                     </td>
-                    <td className='text-end'>
-                      <span className='text-danger fs-7 fw-bold'>+52%</span>
-                    </td>
-                    <td className='text-end'>
-                      <a
-                        href='#'
-                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
-                      >
-                        <KTIcon iconName='arrow-right' className='fs-2' />
-                      </a>
+                    <td>
+                    <span className='text-muted fw-semibold d-block fs-7'>GSM</span>
+                      <span className='text-info fs-7 fw-bold'>94533783</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div className='symbol symbol-50px me-2'>
+                      <div className='symbol symbol-40px me-2 mx-2'>
                         <span className='symbol-label'>
                           <img
                             src={toAbsoluteUrl('/media/svg/avatars/014-girl-7.svg')}
@@ -1241,24 +1035,17 @@ const DashboardWrapper :FC = () =>{
                       <span className='text-muted fw-semibold d-block'>UI/UX Designer</span>
                     </td>
                     <td>
-                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
-                      <span className='text-dark fw-bold d-block fs-5'>$3,400,000</span>
+                      <span className='text-muted fw-semibold d-block fs-7'>EXT</span>
+                      <span className='text-primary fw-bold d-block fs-5'>475</span>
                     </td>
-                    <td className='text-end'>
-                      <span className='text-success fs-7 fw-bold'>-34%</span>
-                    </td>
-                    <td className='text-end'>
-                      <a
-                        href='#'
-                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
-                      >
-                        <KTIcon iconName='arrow-right' className='fs-2' />
-                      </a>
+                    <td>
+                    <span className='text-muted fw-semibold d-block fs-7'>GSM</span>
+                      <span className='text-info fs-7 fw-bold'>94533783</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div className='symbol symbol-50px me-2'>
+                      <div className='symbol symbol-40px me-2 mx-2'>
                         <span className='symbol-label'>
                           <img
                             src={toAbsoluteUrl('/media/svg/avatars/043-boy-18.svg')}
@@ -1275,24 +1062,17 @@ const DashboardWrapper :FC = () =>{
                       <span className='text-muted fw-semibold d-block'>Art Director</span>
                     </td>
                     <td>
-                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
-                      <span className='text-dark fw-bold d-block fs-5'>$35,600,000</span>
+                      <span className='text-muted fw-semibold d-block fs-7'>EXT</span>
+                      <span className='text-primary fw-bold d-block fs-5'>475</span>
                     </td>
-                    <td className='text-end'>
-                      <span className='text-info fs-7 fw-bold'>+230%</span>
-                    </td>
-                    <td className='text-end'>
-                      <a
-                        href='#'
-                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
-                      >
-                        <KTIcon iconName='arrow-right' className='fs-2' />
-                      </a>
+                    <td>
+                    <span className='text-muted fw-semibold d-block fs-7'>GSM</span>
+                      <span className='text-info fs-7 fw-bold'>94533783</span>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <div className='symbol symbol-50px me-2'>
+                      <div className='symbol symbol-40px me-2 mx-2'>
                         <span className='symbol-label'>
                           <img
                             src={toAbsoluteUrl('/media/svg/avatars/001-boy.svg')}
@@ -1309,19 +1089,12 @@ const DashboardWrapper :FC = () =>{
                       <span className='text-muted fw-semibold d-block'>Successful Fellas</span>
                     </td>
                     <td>
-                      <span className='text-muted fw-semibold d-block fs-7'>Paid</span>
-                      <span className='text-dark fw-bold d-block fs-5'>$200,500</span>
+                      <span className='text-muted fw-semibold d-block fs-7'>EXT</span>
+                      <span className='text-primary fw-bold d-block fs-5'>475</span>
                     </td>
-                    <td className='text-end'>
-                      <span className='text-primary fs-7 fw-bold'>+28%</span>
-                    </td>
-                    <td className='text-end'>
-                      <a
-                        href='#'
-                        className='btn btn-sm btn-icon btn-bg-light btn-active-color-primary'
-                      >
-                        <KTIcon iconName='arrow-right' className='fs-2' />
-                      </a>
+                    <td>
+                    <span className='text-muted fw-semibold d-block fs-7'>GSM</span>
+                      <span className='text-info fs-7 fw-bold'>94533783</span>
                     </td>
                   </tr>
                 </tbody>

@@ -45,10 +45,10 @@ import {Requestleaves} from "../pages/EmployeePages/myLeave/Requestleave"
 import {LeavePolicy} from "../pages/EmployeePages/myLeave/leavePolicy"
 import {EmployeeLeaveTracker} from "../pages/EmployeePages/myLeave/LeaveTracker"
 import {OverallPolicies} from "../pages/EmployeePages/OverallPolicies/OverallPolicies"
-import {EmployeeKPI} from "../pages/EmployeePages/KPI/EmployeeKPI"
+import {EmployeeKPI} from "../pages/EmployeePages/KPI/KPISummary"
 import { Login } from '@mui/icons-material'
 
-import {Test} from "../pages/EmployeePages/KPI/test"
+import {EmployeeKPIQuestion} from "../pages/EmployeePages/KPI/EmployeeKPIQuestion"
 
 
 const PrivateRoutes = () => {
@@ -66,7 +66,7 @@ const PrivateRoutes = () => {
         <Route path='auth/*' element={<Navigate to='/EmployeePages/Dashboard' />} />
         {/* Pages */}
 
-        <Route path="/EmployeePages/KPI/test" element={<Test />} />
+        <Route path="/EmployeePages/KPI/EmployeeKPIQuestion" element={<EmployeeKPIQuestion />} />
 
         <Route path="*" element={<Login />} />
         <Route path="employer/dashboard" element={<EmployerDashboard />} />
@@ -111,7 +111,7 @@ const PrivateRoutes = () => {
         <Route path="/EmployeePages/myAccount" element={<MyAccounts />} />
         <Route path="/EmployeePages/Folder" element={<Folder />} />
         <Route path="/EmployeePages/OverallPolicies" element={<OverallPolicies />} />
-        <Route path="/EmployeePages/KPI/EmployeeKPI" element={<EmployeeKPI />} />
+        <Route path="/EmployeePages/KPI/KPISummary" element={<EmployeeKPI />} />
 
         
         {/* <Route path='dashboard' element={<DashboardWrapper />} /> */}
