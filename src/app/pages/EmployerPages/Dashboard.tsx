@@ -270,7 +270,7 @@ const DashboardPage: FC = () => (
   
     
 
-  <div className="card-body text-primary fw-bold ">
+  <div className="card-body text-primary fw-bold bg-primary-subtle" >
         <div className="tab-content" id="myTabContent">
           <div
             className="tab-pane fade show active"

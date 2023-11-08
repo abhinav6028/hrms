@@ -56,6 +56,45 @@ const Requestleaves: React.FC = () => {
 
 
 
+            <div className="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" className="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div className="toast-header">
+                <img src="madayn.png" className="rounded me-2" alt="..." width="30px" height="30px"/>
+                <strong className="me-auto">Masar Web-based System</strong>
+                <small>1 mins ago</small>
+                <button type="button" className="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div className="toast-body">
+                Your Industrial Activity license have been renewed, it will be expired one year from today.
+                </div>
+            </div>
+            </div>
+
+
+
+ <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex={-1} aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div className="modal-dialog">
+    <div className="modal-content" style={{background:"#dfd9fc"}}>
+      <div className="modal-header">
+        <div className="d-flex align-items-center justify-content-between w-100">
+          <div className="d-flex align-items-center">
+            <img src={toAbsoluteUrl('/media/logos/T-colour.png')} className="rounded me-2" alt="..." width="30px" height="30px" />
+            <h1 className="modal-title fs-5 text-body-secondary fw-bold mx-2" id="staticBackdropLabel">Tamimah Telecom</h1>
+          </div>
+          <small className="text-black-50 mx-2">1 minute ago</small>
+        </div>
+        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div className="modal-body text-black-50 fw-bold">
+        Your leave request has been submitted successfully. Please wait for the approval from the management. Thank you.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 <h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Request New Leave </h5>
 
 
@@ -312,15 +351,10 @@ const Requestleaves: React.FC = () => {
 <div className='card-footer d-flex py-6 px-9 justify-content-end'>
   
 <div className=''>
-            <button type='submit' className='btn btn-primary' disabled={loading}>
-              {!loading && 'Submit'}
-              {loading && (
-                <span className='indicator-progress' style={{display: 'block'}}>
-                  Please wait...{' '}
-                  <span className='spinner-border spinner-border-sm align-middle ms-2'></span>
-                </span>
-              )}
-            </button>
+        <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Submit
+        </button>
+
   </div>
           </div>
         </form>
