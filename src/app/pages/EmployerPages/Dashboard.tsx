@@ -81,36 +81,56 @@ const DashboardPage: FC = () => (
      <thead>
          <tr className="fw-bold fs-6 text-gray-800 border-bottom border-gray-200" style={{backgroundColor: '#143983'}}>
              <th style={{ color: 'white'}}><i className="bi bi-person-fill fs-3 me-2 svg-icon-muted text-white"></i>Active Employees</th>
+             <th style={{ color: 'white'}}><i className="bi bi-building-fill fs-3 me-2 svg-icon-muted text-white"></i>TT / TD</th>
+             <th style={{ color: 'white'}}><i className="bi bi-flag-fill fs-3 me-2 svg-icon-muted text-white"></i>Country</th>
              
          </tr>
      </thead>
      <tbody>
          <tr>
              <td className='text-primary fw-bold'>Zubair</td>
+             <td className='text-primary fw-bold'>TT</td>
+             <td className='text-primary fw-bold'>Oman</td>
          </tr>
          <tr>
              <td className='text-primary fw-bold'>Balqees</td>
+             <td className='text-primary fw-bold'>TT</td>
+             <td className='text-primary fw-bold'>Oman</td>
          </tr>
          <tr>
              <td className='text-primary fw-bold'>Arjun</td>
+             <td className='text-primary fw-bold'>TT</td>
+             <td className='text-primary fw-bold'>Oman</td>
          </tr>
          <tr>
              <td className='text-primary fw-bold'>Maya</td>
+             <td className='text-primary fw-bold'>TT</td>
+             <td className='text-primary fw-bold'>Oman</td>
          </tr>
          <tr>
              <td className='text-primary fw-bold'>Shyjel</td>
+             <td className='text-primary fw-bold'>TT</td>
+             <td className='text-primary fw-bold'>Oman</td>
          </tr>
          <tr>
              <td className='text-primary fw-bold'>Zainab</td>
+             <td className='text-primary fw-bold'>TT</td>
+             <td className='text-primary fw-bold'>Oman</td>
          </tr>
          <tr>
              <td className='text-primary fw-bold'>Hyder</td>
+             <td className='text-primary fw-bold'>TT</td>
+             <td className='text-primary fw-bold'>Oman</td>
          </tr>
          <tr>
              <td className='text-primary fw-bold'>Abdulaziz</td>
+             <td className='text-primary fw-bold'>TT</td>
+             <td className='text-primary fw-bold'>Oman</td>
          </tr>
          <tr>
              <td className='text-primary fw-bold'>Meera</td>
+             <td className='text-primary fw-bold'>TT</td>
+             <td className='text-primary fw-bold'>Oman</td>
          </tr>
      </tbody>
    </table>

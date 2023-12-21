@@ -87,7 +87,7 @@ const DashboardWrapper :FC = () =>{
  
 <div className='accordion accordion-borderless' id='kt_accordion'>
   {/* Accordion Item 1 */}
-  <div className='accordion-item bg-transparent pb-3'>
+  <div className='accordion-item bg-transparent pb-3 mt-5'>
     <div
       id='collapseExample'
       className='accordion-collapse collapse'
@@ -178,24 +178,21 @@ const DashboardWrapper :FC = () =>{
 
 
 
-  <div className='accordion-item bg-transparent pb-3'>
+  <div className='accordion-item bg-transparent'>
     <div
       id='collapseExample2'
       className='accordion-collapse collapse'
       aria-labelledby='kt_accordion_header_2'
       data-bs-parent='#kt_accordion'
     >
-      <div className="card card-body mb-2 text-dark bg-primary-subtle">
-  <h6 className="card-title text-primary pt-5 px-5 fs-2"> </h6>       
+      <div className="card card-body mb-2 text-dark bg-primary-subtle">      
      
 <div className="card-body">
   <div className="tab-content" id="myTabContent">
-    {/* begin::Row */}
        <div className='row g-2 g-xl-4 justify-content-md-center'>
-      {/* begin::Col */}
       <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#6_months_EX_table" role="button" aria-expanded="false" aria-controls="6_months_EX_table" data-bs-target="#6_months_EX_table">
       <MixedWidget16
-          className='h-md-20 mb-5 mb-xl-10'
+          className='h-md-20'
           chartProgressColor='#143983'
           chartTrackColor='#BFCAE2'
           chartHeight='250px'
@@ -204,11 +201,9 @@ const DashboardWrapper :FC = () =>{
           // chartTotal='7'
         />
       </a>
-      {/* end::Col */}
-      {/* begin::Col */}
       <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#6_months_EX_table" role="button" aria-expanded="false" aria-controls="3_months_EX_table" data-bs-target="#3_months_EX_table">
         <MixedWidget16
-          className='h-md-60 mb-5 mb-xl-10'
+          className='h-md-60'
           chartProgressColor='#34a8cb'
           chartTrackColor='#C0DFE9'
           chartHeight='250px'
@@ -217,11 +212,9 @@ const DashboardWrapper :FC = () =>{
           // chartTotal='40'
         />
       </a>
-      {/* end::Col */}
-      {/* begin::Col */}
       <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#6_months_EX_table" role="button" aria-expanded="false" aria-controls="1_months_EX_table" data-bs-target="#1_months_EX_table">
         <MixedWidget16
-          className='h-md-60 mb-5 mb-xl-10'
+          className='h-md-60'
           chartProgressColor='#6255a3'
           chartTrackColor='#D1CCEC'
           chartHeight='250px'
@@ -232,7 +225,7 @@ const DashboardWrapper :FC = () =>{
       </a>
       <a className="col-md-3 col-lg-3 col-xl-3 col-xxl-3" data-bs-toggle="collapse" href="#0_months_EX_table" role="button" aria-expanded="false" aria-controls="6_months_EX_table" data-bs-target="#0_months_EX_table">
         <MixedWidget16
-          className='h-md-60 mb-5 mb-xl-10'
+          className='h-md-60'
           chartProgressColor='#FF1931'
           chartTrackColor='#FEA2A2'
           chartHeight='250px'
@@ -248,10 +241,12 @@ const DashboardWrapper :FC = () =>{
 
 <div className='accordion accordion-borderless' id='kt_accordion2'>
   {/* Accordion Item 1 */}
-  <div className='accordion-item bg-transparent pb-3'>
+  <div className='accordion-item bg-transparent'>
     <div id='6_months_EX_table' className='accordion-collapse collapse' aria-labelledby='kt_accordion2_header_1' data-bs-parent='#kt_accordion2'>
 
-  <table className="table table-rounded border border-gray-300 table-row-bordered table-row-gray-300  gy-5 gs-7 bg-white shadow">
+    <p className="text-black-50 mb-5 mt-2 fw-bold"><i className="bi bi-dot fs-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Documents That Will Expire Within 6 - 4 Months</p>
+
+  <table className="table table-rounded border border-gray-300 table-row-bordered table-row-gray-300 gy-5 gs-7 bg-white shadow">
     <thead>
         <tr className="fw-bold fs-5 border-bottom border-gray-200 bg-primary text-white">
             <th><i className="bi bi-person-fill fs-3 me-2 svg-icon-muted text-white"></i>Name</th>
@@ -305,8 +300,10 @@ const DashboardWrapper :FC = () =>{
 
 
 {/* documents expired in 3 months table */}
-<div className='accordion-item bg-transparent pb-3'>
+<div className='accordion-item bg-transparent'>
     <div id='3_months_EX_table' className='accordion-collapse collapse' aria-labelledby='kt_accordion2_header_1' data-bs-parent='#kt_accordion2'>
+    <p className="text-black-50 mb-5  mt-2 fw-bold"><i className="bi bi-dot fs-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Documents That Will Expire Within 3 - 2 Months</p>
+
   <table className="table table-rounded border border-gray-300 table-row-bordered table-row-gray-300  gy-5 gs-7 bg-white shadow">
     <thead>
         <tr className="fw-bold fs-5 border-bottom border-gray-200 bg-primary text-white">
@@ -358,8 +355,10 @@ const DashboardWrapper :FC = () =>{
 
 
 {/* documents expired in 1 month table */}
-<div className='accordion-item bg-transparent pb-3'>
+<div className='accordion-item bg-transparent'>
     <div id='1_months_EX_table' className='accordion-collapse collapse' aria-labelledby='kt_accordion2_header_1' data-bs-parent='#kt_accordion2'>
+    <p className="text-black-50 mb-5 mt-2 fw-bold"><i className="bi bi-dot fs-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Documents That Will Expire Within 1 Month</p>
+
   <table className="table table-rounded border border-gray-300 table-row-bordered table-row-gray-300  gy-5 gs-7 bg-white shadow">
     <thead>
         <tr className="fw-bold fs-5 border-bottom border-gray-200 bg-primary text-white">
@@ -411,8 +410,10 @@ const DashboardWrapper :FC = () =>{
     
 {/* documents already have expired  */}
 
-<div className='accordion-item bg-transparent pb-3'>
+<div className='accordion-item bg-transparent'>
     <div id='0_months_EX_table' className='accordion-collapse collapse' aria-labelledby='kt_accordion2_header_1' data-bs-parent='#kt_accordion2'>  
+    <p className="text-black-50 mb-5 mt-2 fw-bold"><i className="bi bi-dot fs-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Documents That Have Already Expired</p>
+
   <table className="table table-rounded border border-gray-300 table-row-bordered table-row-gray-300  gy-5 gs-7 bg-white shadow">
     <thead>
         <tr className="fw-bold fs-5 border-bottom border-gray-200 bg-danger text-white">
@@ -476,7 +477,7 @@ const DashboardWrapper :FC = () =>{
 
 {/*     leave status     */}
 
-<div className='accordion-item bg-transparent pb-3'>
+<div className='accordion-item bg-transparent pb-2'>
     <div
       id='collapseExample3'
       className='accordion-collapse collapse'

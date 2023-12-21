@@ -45,9 +45,9 @@ const Navbar = () => {
         </div>
       </div> */}
 
-      <div className={clsx('app-navbar-item', itemClass)}>
+      {/* <div className={clsx('app-navbar-item', itemClass)}>
         <ThemeModeSwitcher toggleBtnClass={clsx('btn-active-light-primary btn-custom')} />
-      </div>
+      </div> */}
 
       <div className={clsx('app-navbar-item', itemClass)}>
         <div
@@ -65,9 +65,9 @@ const Navbar = () => {
         <div className='app-navbar-item d-lg-none ms-2 me-n3' title='Show header menu'>
           <div
             className='btn btn-icon btn-active-color-primary w-35px h-35px'
-            id='kt_app_header_menu_toggle'
+            id=''
           >
-            <KTIcon iconName='text-align-left' className={btnIconClass} />
+            {/* <KTIcon iconName='text-align-left' className={btnIconClass} /> */}
           </div>
         </div>
       )}

@@ -18,7 +18,7 @@ export function HeaderWrapper() {
       <div
         id='kt_app_header_container'
         className={clsx(
-          'app-container flex-lg-grow-1 bg-primary',
+          'app-container flex-lg-grow-1 bg-primary w-100',
           classes.headerContainer.join(' '),
           config.app?.header?.default?.containerClass
         )}
@@ -39,7 +39,7 @@ export function HeaderWrapper() {
                 <Link to='/EmployeePages/Dashboard' className='d-lg-none'>
                   <img
                     alt='Logo'
-                    src={toAbsoluteUrl('/media/logos/default-small.svg')}
+                    src={toAbsoluteUrl('/media/logos/T-small-logo-White.png')}
                     className='h-30px'
                   />
                 </Link>
@@ -61,13 +61,8 @@ export function HeaderWrapper() {
                 <>
                   <img
                     alt='Logo'
-                    src={toAbsoluteUrl('/media/logos/default-dark.svg')}
+                    src={toAbsoluteUrl('/media/logos/T-small-logo-White.png')}
                     className='h-20px h-lg-30px app-sidebar-logo-default theme-light-show'
-                  />
-                  <img
-                    alt='Logo'
-                    src={toAbsoluteUrl('/media/logos/default-small-dark.svg')}
-                    className='h-20px h-lg-30px app-sidebar-logo-default theme-dark-show'
                   />
                 </>
               )}
