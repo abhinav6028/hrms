@@ -98,7 +98,9 @@ const Requestleaves: React.FC = () => {
 <h5 className="text-black-50 mb-10"><i className="bi bi-caret-right-fill fs-2 me-2 svg-icon-muted text-black-50"></i>  {/* icon  */} Employee Request New Leave </h5>
 
 
-    <div className='card mb-5 mb-xl-10'>
+<div className="container-fluid mt-5">
+  <div className="d-flex justify-content-center">
+    <div className='card mb-5 mb-xl-10 w-75'>
       <div
         className='card-header border-0 cursor-pointer bg-primary'
         role='button'
@@ -266,10 +268,9 @@ const Requestleaves: React.FC = () => {
 
 
 
-<div className="container mt-5">
-<div className="notice d-flex bg-light-primary rounded border-primary border border-dashed mb-9 p-6">
- 
-  <div className="d-flex flex-stack flex-grow-1">
+<div className="container-fluid mt-5">
+  <div className="notice d-flex bg-light-primary rounded border-primary border border-dashed p-6">
+    <div className="d-flex flex-stack flex-grow-1">
     <div className="fw-bold">
         <div className="fs-7 text-gray-600">
            
@@ -360,6 +361,8 @@ const Requestleaves: React.FC = () => {
         </form>
       </div>
     </div>
+</div>
+</div>
 
    </> 
   )

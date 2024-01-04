@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import {KTIcon} from '../../../helpers'
+import { KTIcon } from '../../../helpers'
 import { IconButton } from '@mui/material'
 import { CheckCircleOutlineRounded, Download, Delete } from '@mui/icons-material'
 
@@ -21,7 +21,7 @@ const months = [
   'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
 ];
 
-const TablesWidget15: React.FC<Props> = ({className, data}) => {
+const TablesWidget15: React.FC<Props> = ({ className, data }) => {
   const now = new Date()
   const nowMonth = now.getMonth()
   return (
@@ -35,17 +35,17 @@ const TablesWidget15: React.FC<Props> = ({className, data}) => {
         <div className='card-toolbar'>
           {/* begin::Menu */}
           <div className='card-toolbar me-5'>
-                <a href='/' className='btn btn-sm btn-primary'>
-                <KTIcon iconName='file-down' className='fs-2' />
-                Export to Excel
-                </a>
-            </div>
-            <div className='card-toolbar me-5'>
-                <a href='/' className='btn btn-sm btn-primary'>
-                <KTIcon iconName='add-item' className='fs-2' />
-                Add Bill
-                </a>
-            </div>
+            <a href='/' className='btn btn-sm btn-primary'>
+              <KTIcon iconName='file-down' className='fs-2' />
+              Export to Excel
+            </a>
+          </div>
+          <div className='card-toolbar me-5'>
+            <a href='/' className='btn btn-sm btn-primary'>
+              <KTIcon iconName='add-item' className='fs-2' />
+              Add Bill
+            </a>
+          </div>
           {/* <Dropdown1 /> */}
           {/* end::Menu */}
         </div>
@@ -54,7 +54,7 @@ const TablesWidget15: React.FC<Props> = ({className, data}) => {
             {months.map((month, index) => (
               <li className='nav-item' key={index}>
                 <a
-                  className={`nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary fw-bold px-9 me-1 ${index===nowMonth+1 ?'active' :null}`}
+                  className={`nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary fw-bold px-9 me-1 ${index === nowMonth + 1 ? 'active' : null}`}
                   data-bs-toggle='tab'
                   href={`#kt_table_widget_8_tab_${index + 1}`}
                 >
@@ -71,8 +71,8 @@ const TablesWidget15: React.FC<Props> = ({className, data}) => {
         <div className='tab-content'>
           {
             months.map((month, index) => (
-            <div className={`tab-pane fade ${index===nowMonth+1 ?'show active' :null}`} id={`kt_table_widget_8_tab_${index + 1}`}>
-              {/* <div className='table-responsive'> */}
+              <div className={`tab-pane fade ${index === nowMonth + 1 ? 'show active' : null}`} id={`kt_table_widget_8_tab_${index + 1}`}>
+                {/* <div className='table-responsive'> */}
                 {/* <table className='table table-hover align-middle gs-0 gy-3'> */}
                 <div className='align-middle gs-0 gy-3'>
                   {/* <thead>
@@ -83,9 +83,9 @@ const TablesWidget15: React.FC<Props> = ({className, data}) => {
                     </tr>
                   </thead> */}
                   {/* <tbody> */}
-                    {
-                      data[index].map((monthData,index) => (
-                        <div className='d-flex align-items-center mb-2 bg-hover-light'>
+                  {
+                    data[index].map((monthData, index) => (
+                      <div className='d-flex align-items-center mb-2 bg-hover-light'>
                         <span className='bullet bullet-vertical h-40px bg-primary'></span>
                         {/* <div className='form-check form-check-custom form-check-solid mx-5'>
                           <input className='form-check-input' type='checkbox' value='' defaultChecked={item.completed}/>
@@ -97,17 +97,17 @@ const TablesWidget15: React.FC<Props> = ({className, data}) => {
                           {/* <span className='text-muted fw-semibold d-block'>{date.toLocaleDateString()}</span> */}
                         </div>
                         {/* <span className={`badge ${item.completed ?'badge-light-success' :(dateDiff<0 ?'bag')} fs-8 fw-bold`}>New</span> */}
-                        <div className='d-flex p-2 justify-content-between' style={{flex: '0 0 35%'}}>
+                        <div className='d-flex p-2 justify-content-between' style={{ flex: '0 0 35%' }}>
                           <div className='d-flex flex-column justify-content-start mx-2'>
-                            <span className={`datafield badge fw-bold d-block fs-7 ${monthData.status ?'badge-light-success' :'badge-light-danger'}`} contentEditable="true">{monthData.amount}</span>
-                            <span className={`badge fw-bold d-block fs-7 ${monthData.status ?'badge-light-success' :'badge-light-danger'}`}>OMR</span>
+                            <span className={`datafield badge fw-bold d-block fs-7 ${monthData.status ? 'badge-light-success' : 'badge-light-danger'}`} contentEditable="true">{monthData.amount}</span>
+                            <span className={`badge fw-bold d-block fs-7 ${monthData.status ? 'badge-light-success' : 'badge-light-danger'}`}>OMR</span>
                           </div>
                           <div>
                             <IconButton className='text-success'>
-                              <CheckCircleOutlineRounded className='fs-1'/>
+                              <CheckCircleOutlineRounded className='fs-1' />
                             </IconButton>
                             <IconButton className='text-danger'>
-                              <Delete className='fs-1'/>
+                              <Delete className='fs-1' />
                             </IconButton>
                           </div>
                         </div>
@@ -134,10 +134,10 @@ const TablesWidget15: React.FC<Props> = ({className, data}) => {
                     ))}
                   {/* </tbody> */}
                 </div>
-              {/* </div> */}
-            </div>
+                {/* </div> */}
+              </div>
             )
-          )}
+            )}
         </div>
       </div>
       {/* end::Body */}
@@ -145,4 +145,4 @@ const TablesWidget15: React.FC<Props> = ({className, data}) => {
   )
 }
 
-export {TablesWidget15}
+export { TablesWidget15 }
