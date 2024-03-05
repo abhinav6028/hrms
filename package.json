@@ -9,6 +9,8 @@
     "@formatjs/intl-pluralrules": "4.3.3",
     "@formatjs/intl-relativetimeformat": "10.0.1",
     "@fortawesome/fontawesome-free": "6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@fullcalendar/core": "^6.1.8",
     "@fullcalendar/daygrid": "^6.1.8",
     "@fullcalendar/multimonth": "^6.1.8",
@@ -38,11 +40,12 @@
     "prism-themes": "1.9.0",
     "prismjs": "1.28.0",
     "qs": "6.10.3",
-    "react": "18.0.0",
+    "react": "^18.0.0",
     "react-apexcharts": "1.4.0",
     "react-bootstrap": "^2.7.0",
     "react-calendar": "^4.4.0",
     "react-copy-to-clipboard": "5.1.0",
+    "react-dates": "^21.8.0",
     "react-dom": "18.0.0",
     "react-event-calendar": "^0.3.0",
     "react-icons": "^4.10.1",
@@ -69,7 +72,7 @@
     "@types/node": "16.11.27",
     "@types/prismjs": "1.26.0",
     "@types/qs": "6.9.7",
-    "@types/react": "18.0.6",
+    "@types/react": "18.0.0",
     "@types/react-copy-to-clipboard": "5.0.2",
     "@types/react-dom": "18.0.2",
     "@types/react-table": "^7.7.9",
@@ -98,6 +101,10 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "resolutions": {
+    "@types/react": "18.0.8",
+    "@types/react-dom": "18.0.3"
   },
   "browserslist": {
     "production": [

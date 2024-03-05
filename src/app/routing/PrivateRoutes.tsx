@@ -41,7 +41,7 @@ import {DashboardWrapper} from "../pages/EmployeePages/DashboardEmployee/Dashboa
 import {DocumentsTracker} from "../pages/EmployeePages/DocumentsTracker/DocumentsTracker"
 import {MyAccounts} from "../pages/EmployeePages/myAccount/myAccount"
 import {Folder} from "../pages/EmployeePages/Folder/Folder"
-import {Requestleaves} from "../pages/EmployeePages/myLeave/Requestleave"
+import Requestleaves from "../pages/EmployeePages/myLeave/Requestleave";
 import {LeavePolicy} from "../pages/EmployeePages/myLeave/leavePolicy"
 import {EmployeeLeaveTracker} from "../pages/EmployeePages/myLeave/LeaveTracker"
 import {OverallPolicies} from "../pages/EmployeePages/OverallPolicies/OverallPolicies"
@@ -60,6 +60,7 @@ const PrivateRoutes = () => {
   const UsersPage = lazy(() => import('../modules/apps/user-management/UsersPage'))
 
   return (
+    <>
     <Routes>
       <Route element={<MasterLayout />}>
         {/* Redirect to Dashboard after success login/registartion */}
@@ -81,7 +82,6 @@ const PrivateRoutes = () => {
         <Route path="employer/hr/renewal" element={<RenewalStatus />} />
         <Route path="employer/hr/payroll" element={<Payroll/>} />
         <Route path="employer/hr/folder" element={<EmployeeDoc />} />
-        
 
         <Route path="employer/hr/RegisterEmployees/Register" element={<Register />} />
         <Route path="employer/hr/EmployeeInfo/EmployeeInfo" element={<EmployeeInfo />} />
@@ -169,6 +169,7 @@ const PrivateRoutes = () => {
         <Route path='*' element={<Navigate to='/error/404' />} />
       </Route>
     </Routes>
+    </>
   )
 }
 
