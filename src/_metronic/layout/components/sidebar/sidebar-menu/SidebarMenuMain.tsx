@@ -14,7 +14,7 @@ const SidebarMenuMain = () => {
 
       
 
-      <SidebarMenuItem to='/error/login' iconpath='/media/icons/duotune/general/gen008.svg' title='Login Page' />
+      {/* <SidebarMenuItem to='/error/login' iconpath='/media/icons/duotune/general/gen008.svg' title='Login Page' /> */}
 
     
 
