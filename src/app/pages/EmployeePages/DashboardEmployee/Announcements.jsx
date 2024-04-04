@@ -1,4 +1,22 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import useFetchData from "../../../hooks/getData";
+
 export function Announcements() {
+
+    // const [fetchedData, setFetchedData] = useState();
+    const [clickedIndex, setClickedIndex] = useState(0)
+
+
+    const { fetchedData } = useFetchData('getAnnouncements');
+
+    console.log("Fetched Data: from component", fetchedData);
+
+    const filterdData = fetchedData?.filter((data, index) => clickedIndex == index)
+
+
+    console.log(".............");
+
     return (
         <div className='accordion-item bg-transparent pb-3 mt-5'>
             <div
@@ -15,16 +33,26 @@ export function Announcements() {
                         <div className="card-title">
                             <div className="card-toolbar pb-2">
                                 <ul className="nav nav-tabs nav-line-tabs nav-stretch fs-6 border-0 fw-bold">
-                                    <li className="nav-item">
-                                        <a
-                                            className="nav-link active"
-                                            data-bs-toggle="tab"
-                                            href="#kt_tab_pane_7"
-                                        >
-                                            7/11/2023
-                                        </a>
-                                    </li>
-                                    <li className="nav-item">
+
+                                    {
+                                        fetchedData?.map((data: any, index: any) =>
+
+                                            <li onClick={() => setClickedIndex(index)}
+                                                className="nav-item">
+                                                <a
+                                                    className="nav-link active"
+                                                    data-bs-toggle="tab"
+                                                    href="#kt_tab_pane_7"
+                                                >
+                                                    {data?.createdAt}
+                                                </a>
+                                            </li>
+                                        )
+                                    }
+
+
+
+                                    {/* <li className="nav-item">
                                         <a
                                             className="nav-link"
                                             data-bs-toggle="tab"
@@ -41,23 +69,41 @@ export function Announcements() {
                                         >
                                             5/21/2023
                                         </a>
-                                    </li>
+                                    </li> */}
+
+
                                 </ul>
                             </div>
                         </div>
                     </div>
+
+
+
+
+
                     <div className="card-body text-primary fw-bold">
                         <div className="tab-content" id="myTabContent">
-                            <div
-                                className="tab-pane fade show active"
-                                id="kt_tab_pane_7"
-                                role="tabpanel"
-                            >
-                                Tamimah is an entrepreneurial company established in 1984 with its main subsidiaries,
-                                Tamimah Consultancy Group, a pioneer in economics & financial consultancy in the Sultanate
-                                of Oman and Tamimah Telecom & Computer Technology, a technology management company and specializing
-                                in the core technologies of Mobile, Internet and Telecommunications.
-                            </div>
+                            {
+                                filterdData?.map((data, index) =>
+
+                                    <div
+                                        className="tab-pane fade show active"
+                                        id="kt_tab_pane_7"
+                                        role="tabpanel"
+                                    >
+                                        {data?.textContent}
+                                        {/* Tamimah is an entrepreneurial company established in 1984 with its main subsidiaries,
+                                        Tamimah Consultancy Group, a pioneer in economics & financial consultancy in the Sultanate
+                                        of Oman and Tamimah Telecom & Computer Technology, a technology management company and specializing
+                                        in the core technologies of Mobile, Internet and Telecommunications. */}
+                                    </div>
+
+
+                                )
+                            }
+
+
+
                             <div
                                 className="tab-pane fade"
                                 id="kt_tab_pane_8"

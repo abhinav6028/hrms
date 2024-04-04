@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react'
-import {useIntl} from 'react-intl'
-import {KTIcon} from '../../../../helpers'
-import {SidebarMenuItemWithSub} from './SidebarMenuItemWithSub'
-import {SidebarMenuItem} from './SidebarMenuItem'
+import { useIntl } from 'react-intl'
+import { KTIcon } from '../../../../helpers'
+import { SidebarMenuItemWithSub } from './SidebarMenuItemWithSub'
+import { SidebarMenuItem } from './SidebarMenuItem'
 import { Link } from 'react-router-dom'
 
 const SidebarMenuMain = () => {
@@ -12,61 +12,60 @@ const SidebarMenuMain = () => {
   return (
     <>
 
-      
+
 
       {/* <SidebarMenuItem to='/error/login' iconpath='/media/icons/duotune/general/gen008.svg' title='Login Page' /> */}
-
-    
 
       <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
           <span className='menu-section  text-uppercase fs-8 ls-1 text-white'>Employee Pages</span>
         </div>
-        </div>
-       
+      </div>
 
-      
-        <SidebarMenuItem to='/EmployeePages/Dashboard' iconpath='/media/icons/duotune/general/gen008.svg' title='Dashboard' fontIcon='bi-layers' />
-        <SidebarMenuItemWithSub
+
+
+      <SidebarMenuItem to='/EmployeePages/Dashboard' iconpath='/media/icons/duotune/general/gen008.svg' title='Dashboard' fontIcon='bi-layers' />
+
+      <SidebarMenuItemWithSub
         to='/EmployeePages/myLeave/Dashboard'
         title='My Leave'
         iconpath='/media/icons/duotune/general/gen005.svg'
         fontIcon='bi-person'
       >
-         <SidebarMenuItem to='/EmployeePages/myLeave/Requestleave' iconpath='' title='Request Leave' fontIcon='bi-layers' hasBullet={true} />
-         <SidebarMenuItem to='/EmployeePages/myLeave/leaveTracker'  iconpath='' title='Leave Tracker' fontIcon='bi-layers' hasBullet={true} />
-        <SidebarMenuItem to='/EmployeePages/myLeave/leavePolicy'  iconpath="" title='Leave Policy' fontIcon='bi-layers' hasBullet={true} />
+        <SidebarMenuItem to='/EmployeePages/myLeave/Requestleave' iconpath='' title='Request Leave' fontIcon='bi-layers' hasBullet={true} />
+        <SidebarMenuItem to='/EmployeePages/myLeave/leaveTracker' iconpath='' title='Leave Tracker' fontIcon='bi-layers' hasBullet={true} />
+        <SidebarMenuItem to='/EmployeePages/myLeave/leavePolicy' iconpath="" title='Leave Policy' fontIcon='bi-layers' hasBullet={true} />
 
-        </SidebarMenuItemWithSub>
-      
+      </SidebarMenuItemWithSub>
 
 
-        <SidebarMenuItem to='/EmployeePages/DocumentsTracker'  iconpath='/media/icons/duotune/communication/com005.svg' title='Documents Tracker' fontIcon='bi-layers' />
-        <SidebarMenuItem to='/EmployeePages/MyAccount'  icon='user' title='My Details' fontIcon='bi-layers' />
-        <SidebarMenuItem to='/EmployeePages/Folder'  iconpath='/media/icons/duotune/files/fil012.svg' title='My Folder' fontIcon='bi-layers' />
-        <SidebarMenuItem to='/EmployeePages/OverallPolicies'  iconpath='/media/icons/duotune/general/gen051.svg' title='Company Documents' fontIcon='bi-layers' />
-        
-        
-        <SidebarMenuItemWithSub
-          to=''
-          title='My KPI'
-          icon='ranking'
-          fontIcon='bi-app-indicator'
+
+      <SidebarMenuItem to='/EmployeePages/DocumentsTracker' iconpath='/media/icons/duotune/communication/com005.svg' title='Documents Tracker' fontIcon='bi-layers' />
+      <SidebarMenuItem to='/EmployeePages/MyAccount' icon='user' title='My Details' fontIcon='bi-layers' />
+      <SidebarMenuItem to='/EmployeePages/Folder' iconpath='/media/icons/duotune/files/fil012.svg' title='My Folder' fontIcon='bi-layers' />
+      <SidebarMenuItem to='/EmployeePages/OverallPolicies' iconpath='/media/icons/duotune/general/gen051.svg' title='Company Documents' fontIcon='bi-layers' />
+
+
+      <SidebarMenuItemWithSub
+        to=''
+        title='My KPI'
+        icon='ranking'
+        fontIcon='bi-app-indicator'
       >
 
-        <SidebarMenuItem to='/EmployeePages/KPI/KPISummary'  icon='ranking' title='KPI Summary' fontIcon='bi-layers' />
-        <SidebarMenuItem to='/EmployeePages/KPI/EmployeeKPIQuestion'  icon='ranking' title='KPI Questions' fontIcon='bi-layers' />
-        </SidebarMenuItemWithSub>
+        <SidebarMenuItem to='/EmployeePages/KPI/KPISummary' icon='ranking' title='KPI Summary' fontIcon='bi-layers' />
+        <SidebarMenuItem to='/EmployeePages/KPI/EmployeeKPIQuestion' icon='ranking' title='KPI Questions' fontIcon='bi-layers' />
+      </SidebarMenuItemWithSub>
 
 
-        
-        
 
 
-        
-       
-     
-        <div className='menu-item'>
+
+
+
+
+
+      <div className='menu-item'>
         <div className='menu-content pt-8'>
           <span className='menu-section text-uppercase fs-8 ls-1 text-white'>Employer Pages</span>
         </div>
@@ -75,28 +74,28 @@ const SidebarMenuMain = () => {
       <SidebarMenuItem
         to='/employer/dashboard'
         icon='element-11'
-        title={intl.formatMessage({id: 'MENU.DASHBOARD'})}
+        title={intl.formatMessage({ id: 'MENU.DASHBOARD' })}
         fontIcon='bi-app-indicator'
       />
 
 
       <SidebarMenuItemWithSub
-          to=''
-          title='Leave Tracker'
-          iconpath='/media/icons/duotune/files/fil011.svg'
-          fontIcon='bi-app-indicator'
+        to=''
+        title='Leave Tracker'
+        iconpath='/media/icons/duotune/files/fil011.svg'
+        fontIcon='bi-app-indicator'
       >
-      
+
         <SidebarMenuItem
           to='employer/leave/notification'
           iconpath=''
           title='Leave Requests'
           fontIcon='bi-app-indicator'
-          hasBullet={true} 
-          /> 
+          hasBullet={true}
+        />
 
-         
-              {/* <div className='menu-item btn-active-light-primary'>
+
+        {/* <div className='menu-item btn-active-light-primary'>
                 <Link to={'/employer/leave/notification'} className='menu-link px-5'>
                   <span className='menu-text'> Leave Requests</span>
                   <span className='menu-badge'>
@@ -104,7 +103,7 @@ const SidebarMenuMain = () => {
                   </span>
                 </Link>
               </div> */}
-     
+
 
 
         <SidebarMenuItem
@@ -112,21 +111,21 @@ const SidebarMenuMain = () => {
           iconpath=''
           title='Employee Tracker'
           fontIcon='bi-app-indicator'
-          hasBullet={true} 
+          hasBullet={true}
         />
         <SidebarMenuItem
           to='employer/hr/policies'
           iconpath=""
           title='Leave Policy'
           fontIcon='bi-app-indicator'
-          hasBullet={true} 
+          hasBullet={true}
         />
         <SidebarMenuItem
           to='employer/leave/leaveForms'
           iconpath=""
           title='Submitted Leave Forms'
           fontIcon='bi-app-indicator'
-          hasBullet={true} 
+          hasBullet={true}
         />
       </SidebarMenuItemWithSub>
 
@@ -187,34 +186,34 @@ const SidebarMenuMain = () => {
         icon='user-edit'
         fontIcon='bi-app-indicator'
       >
-            <SidebarMenuItem
-              to='employer/hr/RegisterEmployees/Register'
-              icon=''
-              title='Register New Employee'
-              fontIcon='bi-app-indicator'
-              hasBullet={true} 
-            />
-            <SidebarMenuItem
-              to='employer/hr/EmployeeInfo/EmployeeInfo'
-              icon=''
-              title='Employee Details'
-              fontIcon='bi-app-indicator'
-              hasBullet={true} 
-            />
-        </SidebarMenuItemWithSub>
+        <SidebarMenuItem
+          to='employer/hr/RegisterEmployees/Register'
+          icon=''
+          title='Register New Employee'
+          fontIcon='bi-app-indicator'
+          hasBullet={true}
+        />
+        <SidebarMenuItem
+          to='employer/hr/EmployeeInfo/EmployeeInfo'
+          icon=''
+          title='Employee Details'
+          fontIcon='bi-app-indicator'
+          hasBullet={true}
+        />
+      </SidebarMenuItemWithSub>
 
       <SidebarMenuItemWithSub
-          to=''
-          title='KPI'
-          icon='ranking'
-          fontIcon='bi-app-indicator'
+        to=''
+        title='KPI'
+        icon='ranking'
+        fontIcon='bi-app-indicator'
       >
 
-        <SidebarMenuItem to='/employer/EmployerKPI/KPIQuestions'  icon='' title='KPI Questions' fontIcon='bi-layers' hasBullet={true}  />
-        <SidebarMenuItem to='/employer/EmployerKPI/ReportKPI'  icon='' title='KPI Report' fontIcon='bi-layers' hasBullet={true}  />
-        <SidebarMenuItem to='/employer/EmployerKPI/SummaryKPI'  icon='' title='KPI Summary' fontIcon='bi-layers' hasBullet={true}  />
+        <SidebarMenuItem to='/employer/EmployerKPI/KPIQuestions' icon='' title='KPI Questions' fontIcon='bi-layers' hasBullet={true} />
+        <SidebarMenuItem to='/employer/EmployerKPI/ReportKPI' icon='' title='KPI Report' fontIcon='bi-layers' hasBullet={true} />
+        <SidebarMenuItem to='/employer/EmployerKPI/SummaryKPI' icon='' title='KPI Summary' fontIcon='bi-layers' hasBullet={true} />
 
-        </SidebarMenuItemWithSub>
+      </SidebarMenuItemWithSub>
 
       <SidebarMenuItemWithSub
         to=''
@@ -227,14 +226,14 @@ const SidebarMenuMain = () => {
           icon=''
           title='Vehicles'
           fontIcon='bi-app-indicator'
-          hasBullet={true} 
+          hasBullet={true}
         />
         <SidebarMenuItem
           to='employer/car/documents'
           iconpath=""
           title='Vehicle Documents'
           fontIcon='bi-app-indicator'
-          hasBullet={true} 
+          hasBullet={true}
         />
       </SidebarMenuItemWithSub>
 
@@ -251,35 +250,35 @@ const SidebarMenuMain = () => {
           iconpath=""
           title='Renewal Company Documents'
           fontIcon='bi-app-indicator'
-          hasBullet={true} 
+          hasBullet={true}
         />
         <SidebarMenuItem
           to='employer/organisation/companyDoc'
           iconpath=""
           title='TM/TD Documents'
           fontIcon='bi-app-indicator'
-          hasBullet={true} 
+          hasBullet={true}
         />
         <SidebarMenuItem
           to='employer/organisation/bankGuarantee'
           icon=''
           title='Bank Guarantee'
           fontIcon='bi-app-indicator'
-          hasBullet={true} 
+          hasBullet={true}
         />
         <SidebarMenuItem
           to='employer/organisation/products'
           icon=''
           title='Products/Services'
           fontIcon='bi-app-indicator'
-          hasBullet={true} 
+          hasBullet={true}
         />
       </SidebarMenuItemWithSub>
 
-          
 
-      
-       
+
+
+
       {/* <div className='menu-item'>
         <div className='menu-content pt-8 pb-2'>
           <span className='menu-section text-muted text-uppercase fs-8 ls-1'>Crafted</span>
@@ -381,10 +380,10 @@ const SidebarMenuMain = () => {
         </a>
       </div> */}
 
-<br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br>
     </>
   )
 }
 
-export {SidebarMenuMain}
+export { SidebarMenuMain }
 
